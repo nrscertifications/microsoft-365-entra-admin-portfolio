@@ -106,19 +106,21 @@ Initial PowerShell administration evidence is included as a separate track. Powe
 
 ## Configuration Walkthrough & Evidence Map
 
-Evidence is organized by operational workstream rather than by course section:
+Evidence is organized by operational workstream:
 
 | Workstream | Evidence Folder | Documentation |
 |---|---|---|
-| Tenant Foundation | `screenshots/01-tenant-foundation` | [`docs/tenant-foundation-domain-readiness.md`](docs/tenant-foundation-domain-readiness.md) |
-| Domain Readiness | `screenshots/02-domain-readiness` | [`docs/tenant-foundation-domain-readiness.md`](docs/tenant-foundation-domain-readiness.md) |
-| User Provisioning | `screenshots/03-user-provisioning` | [`docs/user-lifecycle-administration.md`](docs/user-lifecycle-administration.md) |
-| External Collaboration & Contacts | `screenshots/04-external-collaboration-contacts` | [`docs/external-collaboration-contacts.md`](docs/external-collaboration-contacts.md) |
-| Group Collaboration | `screenshots/05-group-collaboration` | [`docs/group-collaboration-management.md`](docs/group-collaboration-management.md) |
-| Licensing & Service Access | `screenshots/06-licensing-service-access` | [`docs/licensing-service-access-review.md`](docs/licensing-service-access-review.md) |
-| Service Health & Network Insights | `screenshots/07-service-health-network-insights` | [`docs/service-health-backup-readiness.md`](docs/service-health-backup-readiness.md) |
-| Backup Readiness | `screenshots/08-operational-resilience-backup` | [`docs/service-health-backup-readiness.md`](docs/service-health-backup-readiness.md) |
-| PowerShell Admin Tooling | `screenshots/09-powershell-admin-tooling` | [`docs/powershell-graph-administration.md`](docs/powershell-graph-administration.md) |
+| Tenant Foundation | [`screenshots/01-tenant-foundation`](screenshots/01-tenant-foundation) | [`docs/tenant-foundation-domain-readiness.md`](docs/tenant-foundation-domain-readiness.md) |
+| Domain Readiness | [`screenshots/02-domain-readiness`](screenshots/02-domain-readiness) | [`docs/tenant-foundation-domain-readiness.md`](docs/tenant-foundation-domain-readiness.md) |
+| User Provisioning | [`screenshots/03-user-provisioning`](screenshots/03-user-provisioning) | [`docs/user-lifecycle-administration.md`](docs/user-lifecycle-administration.md) |
+| External Collaboration & Contacts | [`screenshots/04-external-collaboration-contacts`](screenshots/04-external-collaboration-contacts) | [`docs/external-collaboration-contacts.md`](docs/external-collaboration-contacts.md) |
+| Group Collaboration | [`screenshots/05-group-collaboration`](screenshots/05-group-collaboration) | [`docs/group-collaboration-management.md`](docs/group-collaboration-management.md) |
+| Licensing & Service Access | [`screenshots/06-licensing-service-access`](screenshots/06-licensing-services-access) | [`docs/licensing-service-access-review.md`](docs/licensing-service-access-review.md) |
+| Service Health & Network Insights | [`screenshots/07-service-health-network-insights`](screenshots/07-service-health-network-insights) | [`docs/service-health-backup-readiness.md`](docs/service-health-backup-readiness.md) |
+| Backup Readiness | [`screenshots/08-operational-resilience-backup`](screenshots/08-operational-resilience-backup) | [`docs/service-health-backup-readiness.md`](docs/service-health-backup-readiness.md) |
+| PowerShell Admin Tooling | [`screenshots/09-powershell-admin-tooling`](screenshots/09-powershell-admin-tooling) | [`docs/powershell-graph-administration.md`](docs/powershell-graph-administration.md) |
+
+> **Screenshot note:** The full screenshot archive supporting these workstreams is available in the [`screenshots/`](screenshots/) directory.
 
 ---
 
