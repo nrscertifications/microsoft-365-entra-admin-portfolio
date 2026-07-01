@@ -1,0 +1,11 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary working files
+*.tmp
+*.bak
+
+# Local notes not meant for publishing
+local-notes/
+private/
