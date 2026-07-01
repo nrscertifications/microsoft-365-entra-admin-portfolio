@@ -2,13 +2,13 @@
 
 ## Project Overview
 
-This repository documents a hands-on Microsoft 365 and Microsoft Entra ID administration environment focused on tenant readiness, identity administration, external collaboration, group-based collaboration, licensing review, service health visibility, and backup readiness.
+This repository documents a hands-on Microsoft 365 and Microsoft Entra ID administration environment focused on tenant readiness, user administration, external collaboration, group management, licensing review, service health, and backup readiness.
 
-I configured the environment in a dedicated non-production Microsoft 365 tenant using fictional users, lab-only contacts, and test objects. The repository is organized by administrative workstream rather than by training module so the evidence can be reviewed like a practical IT Support, Service Desk, Technical Support, or junior systems administration portfolio.
+I configured the work in a dedicated non-production Microsoft 365 tenant using fictional users, test contacts, sample guest users, and lab-only objects. The repository is organized by administrative workflow instead of course section, so the evidence can be reviewed as a practical IT Support, Service Desk, Technical Support, or junior systems administration portfolio.
 
-The objective is to show clear working knowledge of how Microsoft 365 admin center, Microsoft Entra admin center, and Azure portal workflows connect across tenant configuration, identity objects, access, licensing, collaboration, and operational visibility.
+The goal of this project was to understand how the Microsoft 365 admin center, Microsoft Entra admin center, and Azure portal connect across tenant setup, identity objects, licensing, collaboration, and operational support views.
 
-> **Data and lab context note:** Screenshots use fictional users, test objects, and sample external collaboration targets created only for this Microsoft 365 / Entra ID lab. The primary administrative environment for this project was the Microsoft 365 tenant documented in the tenant foundation workstream. Temporary passwords and tenant-specific identifiers that do not add review value were redacted. No production customer data, private user data, or live business records are included.
+> **Data and lab context note:** Screenshots use fictional users, test objects, and sample external collaboration targets created only for this Microsoft 365 / Entra ID lab. The primary administrative environment for this project was the Microsoft 365 tenant documented in the tenant foundation workflow. Temporary passwords and tenant-specific identifiers that do not add review value were redacted. No production customer data, private user data, or live business records are included.
 
 ---
 
@@ -30,9 +30,9 @@ The objective is to show clear working knowledge of how Microsoft 365 admin cent
 
 ### 1. Tenant Foundation & Domain Readiness
 
-I established the tenant foundation used for the rest of the administrative work. This included tenant overview validation, administrative portal navigation, custom domain workflow review, and resource-backed service visibility through Azure.
+I established the tenant foundation used for the rest of the administrative work. This included tenant overview validation, admin portal navigation, custom domain workflow review, and resource-backed service visibility through Azure.
 
-This workstream provides the base layer for user identities, email addressing, licensing, collaboration, service health, and backup readiness.
+This provided the base layer for user identities, email addressing, licensing, collaboration, service health, and backup readiness.
 
 ![Tenant creation confirmation](screenshots/01-tenant-foundation/03-tenant-create-successful-04.png)
 
@@ -40,9 +40,9 @@ This workstream provides the base layer for user identities, email addressing, l
 
 ### 2. Identity & User Lifecycle Administration
 
-I provisioned internal member users from multiple administrative surfaces and verified that user objects appeared correctly across Microsoft 365 admin center, Azure portal, and Microsoft Entra admin center.
+I created internal member users from multiple admin portals and verified that the same user objects appeared across Microsoft 365 admin center, Azure portal, and Microsoft Entra admin center.
 
-This demonstrates the ability to separate the admin portal used for a task from the underlying identity object that exists in Microsoft Entra ID.
+This helped confirm the difference between the portal used to complete an admin task and the underlying identity object stored in Microsoft Entra ID.
 
 ![Microsoft 365 admin user creation](screenshots/03-user-provisioning/19-m365-admin-user-create-01.png)
 
@@ -50,9 +50,9 @@ This demonstrates the ability to separate the admin portal used for a task from 
 
 ### 3. Bulk User Provisioning
 
-I executed the bulk user creation workflow to validate CSV-based onboarding logic, generated account creation results, and reviewed post-creation verification in the active users list.
+I reviewed the bulk user creation workflow, including CSV-based account creation, generated results, and post-creation verification in the active users list.
 
-This workflow is relevant to onboarding scenarios where multiple accounts need to be staged consistently before service access and group membership are finalized.
+This workflow is relevant to onboarding scenarios where multiple accounts need to be created consistently before licenses, groups, and access are finalized.
 
 ![Bulk user provisioning workflow](screenshots/03-user-provisioning/01-bulk-user-provisioning-01.png)
 
@@ -60,9 +60,9 @@ This workflow is relevant to onboarding scenarios where multiple accounts need t
 
 ### 4. External Collaboration & Address Book Management
 
-I configured external contacts for address book visibility and reviewed the external guest invitation workflow through Entra ID B2B collaboration.
+I created external contacts for address book visibility and reviewed the guest invitation workflow through Microsoft Entra B2B collaboration.
 
-This separates two common support cases: external contacts that support discoverability and communication, and guest users that can become tenant-visible collaboration identities after invitation.
+This workflow separates two common support scenarios: external contacts used for discoverability and communication, and guest users that become tenant-visible collaboration identities after invitation.
 
 ![External contact creation](screenshots/04-external-collaboration-contacts/02-external-contact-create-01.png)
 
@@ -70,9 +70,9 @@ This separates two common support cases: external contacts that support discover
 
 ### 5. Group-Based Collaboration Management
 
-I created and validated Microsoft 365 group configuration, including group properties, owners, members, and Entra-side object review.
+I created and reviewed Microsoft 365 group configuration, including group properties, owners, members, and Entra-side object validation.
 
-This demonstrates administrative handling of collaboration containers used for membership, access, communication, and workload-backed collaboration.
+This demonstrates how group objects support collaboration, membership management, and access-related administration in Microsoft 365 environments.
 
 ![Microsoft 365 group creation](screenshots/05-group-collaboration/01-groups-m365-group-create-01.png)
 
@@ -80,17 +80,17 @@ This demonstrates administrative handling of collaboration containers used for m
 
 ### 6. Licensing & Service Access Review
 
-I reviewed license inventory, user assignment views, service access implications, and marketplace navigation without presenting the work as purchasing or billing administration.
+I reviewed license inventory, user assignment views, and service access settings from the admin center.
 
-The focus was administrative validation: what products are available, where assignments are reviewed, how licensing affects service access, and why license state matters during account troubleshooting.
+The focus was administrative review: checking available products, where license assignments are viewed, how licensing affects service access, and why license state matters during account troubleshooting.
 
 ![License inventory review](screenshots/06-licensing-service-access/01-license-inventory-review-01.png)
 
 ### 7. Operational Visibility & Backup Readiness
 
-I reviewed service health, network insights, software update and Log Analytics exposure, and Microsoft 365 Backup readiness screens for Exchange, OneDrive, and SharePoint workflows.
+I reviewed admin views for service health, network insights, software update visibility, Log Analytics exposure, and Microsoft 365 Backup readiness for Exchange, OneDrive, and SharePoint.
 
-These views support service desk triage by helping distinguish local workstation issues from tenant-level service issues, network readiness problems, service access configuration, or backup-readiness gaps.
+These views support service desk triage by helping separate local device issues from tenant-level service issues, network readiness problems, service access issues, or backup-readiness gaps.
 
 ![Network insights location configuration](screenshots/07-service-health-network-insights/01-network-insights-location-complete.png)
 
@@ -98,7 +98,7 @@ These views support service desk triage by helping distinguish local workstation
 
 ### 8. PowerShell & Microsoft Graph Administration Track
 
-Initial PowerShell administration evidence is included as a separate track. PowerShell and Microsoft Graph administration will be expanded separately because command-driven administration is a different competency from portal-based configuration.
+Initial PowerShell administration evidence is included as a separate track. I separated this from the portal-based work because command-line administration and Microsoft Graph workflows should be documented as their own skill area.
 
 ![PowerShell command discovery](screenshots/09-powershell-admin-tooling/02-powershell-get-command-by-noun.png)
 
@@ -115,7 +115,7 @@ Evidence is organized by operational workstream:
 | User Provisioning | [`screenshots/03-user-provisioning`](screenshots/03-user-provisioning) | [`docs/user-lifecycle-administration.md`](docs/user-lifecycle-administration.md) |
 | External Collaboration & Contacts | [`screenshots/04-external-collaboration-contacts`](screenshots/04-external-collaboration-contacts) | [`docs/external-collaboration-contacts.md`](docs/external-collaboration-contacts.md) |
 | Group Collaboration | [`screenshots/05-group-collaboration`](screenshots/05-group-collaboration) | [`docs/group-collaboration-management.md`](docs/group-collaboration-management.md) |
-| Licensing & Service Access | [`screenshots/06-licensing-service-access`](screenshots/06-licensing-services-access) | [`docs/licensing-service-access-review.md`](docs/licensing-service-access-review.md) |
+| Licensing & Service Access | [`screenshots/06-licensing-service-access`](screenshots/06-licensing-service-access) | [`docs/licensing-service-access-review.md`](docs/licensing-service-access-review.md) |
 | Service Health & Network Insights | [`screenshots/07-service-health-network-insights`](screenshots/07-service-health-network-insights) | [`docs/service-health-backup-readiness.md`](docs/service-health-backup-readiness.md) |
 | Backup Readiness | [`screenshots/08-operational-resilience-backup`](screenshots/08-operational-resilience-backup) | [`docs/service-health-backup-readiness.md`](docs/service-health-backup-readiness.md) |
 | PowerShell Admin Tooling | [`screenshots/09-powershell-admin-tooling`](screenshots/09-powershell-admin-tooling) | [`docs/powershell-graph-administration.md`](docs/powershell-graph-administration.md) |
@@ -126,20 +126,20 @@ Evidence is organized by operational workstream:
 
 ## Core Competencies Demonstrated
 
-* Built and validated a Microsoft 365 tenant administration environment using non-production test data.
-* Provisioned and reviewed member users across Microsoft 365, Azure, and Entra administrative surfaces.
-* Differentiated internal users, guest users, and external contacts from an administration and support perspective.
-* Completed bulk provisioning workflow review with credential-sensitive output redacted.
-* Configured and validated Microsoft 365 group properties, owners, and members.
-* Reviewed licensing inventory and service access implications without overclaiming billing or purchase administration.
-* Reviewed operational visibility areas including service health, network insights, software update exposure, and backup readiness.
-* Organized technical evidence in a GitHub structure suitable for IT Support, Service Desk, Technical Support, and junior systems administration review.
+* Built and validated a non-production Microsoft 365 tenant for administration practice.
+* Created and reviewed member users across Microsoft 365 admin center, Azure portal, and Microsoft Entra admin center.
+* Practiced manual and bulk user provisioning workflows, including post-creation verification.
+* Separated internal users, guest users, and external contacts based on how each object is used in Microsoft 365 and Entra ID.
+* Created and reviewed Microsoft 365 group settings, owners, members, and Entra-side group properties.
+* Reviewed license inventory, assignment views, and service access settings used during account troubleshooting.
+* Checked service health, network insights, software update visibility, Log Analytics exposure, and Microsoft 365 Backup readiness.
+* Documented the work with Markdown, organized screenshots by workflow, and maintained the project in GitHub for portfolio review.
 
 ---
 
 ## Project Documentation
 
-Detailed documentation is located in the `docs` folder:
+Detailed documentation is located in the [`docs/`](docs/) folder:
 
 * [`Project Overview`](docs/project-overview.md)
 * [`Tenant Foundation & Domain Readiness`](docs/tenant-foundation-domain-readiness.md)
