@@ -8,10 +8,7 @@ I configured the environment in a dedicated non-production Microsoft 365 tenant 
 
 The objective is to show clear working knowledge of how Microsoft 365 admin center, Microsoft Entra admin center, and Azure portal workflows connect across tenant configuration, identity objects, access, licensing, collaboration, and operational visibility.
 
-> **Data note:** Screenshots use fictional users and test objects. Temporary passwords and tenant-specific identifiers that do not add review value were redacted. No production customer data, private user data, or live business records are included.
-
-
-> **External collaboration note:** The external organization and guest/contact examples in this repository are fictional lab objects used to demonstrate Microsoft Entra B2B guest invitation, external contact management, and address book visibility workflows. The primary administrative environment for this project was the Microsoft 365 tenant documented in the tenant foundation workstream.
+> **Data and lab context note:** Screenshots use fictional users, test objects, and sample external collaboration targets created only for this Microsoft 365 / Entra ID lab. The primary administrative environment for this project was the Microsoft 365 tenant documented in the tenant foundation workstream. Temporary passwords and tenant-specific identifiers that do not add review value were redacted. No production customer data, private user data, or live business records are included.
 
 ---
 
