@@ -14,9 +14,10 @@ The objective is to show clear working knowledge of how Microsoft 365 admin cent
 
 ## Core Technical Skills & Tools
 
-* **Microsoft 365 Administration:** Tenant navigation, active user management, contacts, groups, licensing, and service access review
+* **Microsoft 365 Administration:** Tenant navigation, active user management, contacts, groups, licensing, service health, and service access review
+* **Tenant & Domain Readiness:** Tenant overview validation, custom domain workflow review, primary domain awareness, and admin portal navigation
 * **Microsoft Entra ID:** Member users, guest users, external collaboration, group objects, identity properties, and portal validation
-* **Azure Portal:** Tenant and directory administration, custom domain validation, resource group review, and Log Analytics workspace exposure
+* **Azure Portal:** Tenant and directory administration, resource group review, and Log Analytics workspace exposure
 * **User Lifecycle Administration:** Manual provisioning, bulk provisioning, profile properties, account state review, license review, and cross-portal verification
 * **External Collaboration:** B2B guest invitation workflow, external contacts, address book visibility concepts, and Outlook web access validation
 * **Group Administration:** Microsoft 365 groups, owners, members, group properties, Entra group validation, and dynamic membership exposure
