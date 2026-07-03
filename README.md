@@ -2,11 +2,11 @@
 
 ## Project Overview
 
-This repository documents a hands-on Microsoft 365 and Microsoft Entra ID administration environment focused on tenant readiness, user administration, external collaboration, group management, licensing review, service health, and backup readiness.
+This repository documents a hands-on Microsoft 365 and Microsoft Entra ID administration environment focused on tenant readiness, user administration, external collaboration, group management, licensing review, service health, backup readiness, and Microsoft Graph PowerShell administration.
 
 I configured the work in a dedicated non-production Microsoft 365 tenant using fictional users, test contacts, sample guest users, and lab-only objects. The repository is organized by administrative workflow instead of course section, so the evidence can be reviewed as a practical IT Support, Service Desk, Technical Support, or junior systems administration portfolio.
 
-The goal of this project was to understand how the Microsoft 365 admin center, Microsoft Entra admin center, and Azure portal connect across tenant setup, identity objects, licensing, collaboration, and operational support views.
+The goal of this project was to understand how the Microsoft 365 admin center, Microsoft Entra admin center, Azure portal, and Microsoft Graph PowerShell connect across tenant setup, identity objects, licensing, collaboration, operational support views, and command-line administration.
 
 > **Data and lab context note:** Screenshots use fictional users, test objects, and sample external collaboration targets created only for this Microsoft 365 / Entra ID lab. The primary administrative environment for this project was the Microsoft 365 tenant documented in the tenant foundation workflow. Temporary passwords and tenant-specific identifiers that do not add review value were redacted. No production customer data, private user data, or live business records are included.
 
@@ -18,6 +18,7 @@ The goal of this project was to understand how the Microsoft 365 admin center, M
 * **Tenant & Domain Readiness:** Tenant overview validation, custom domain workflow review, primary domain awareness, and admin portal navigation
 * **Microsoft Entra ID:** Member users, guest users, external collaboration, group objects, identity properties, and portal validation
 * **Azure Portal:** Tenant and directory administration, resource group review, and Log Analytics workspace exposure
+* **Microsoft Graph PowerShell:** Module installation, delegated authentication, Graph scopes, user retrieval, test user creation, group creation, subscribed SKU review, license assignment, CSV-based bulk provisioning, and cleanup validation
 * **User Lifecycle Administration:** Manual provisioning, bulk provisioning, profile properties, account state review, license review, and cross-portal verification
 * **External Collaboration:** B2B guest invitation workflow, external contacts, address book visibility concepts, and Outlook web access validation
 * **Group Administration:** Microsoft 365 groups, owners, members, group properties, Entra group validation, and dynamic membership exposure
@@ -98,9 +99,15 @@ These views support service desk triage by helping separate local device issues 
 
 ### 8. PowerShell & Microsoft Graph Administration Track
 
-Initial PowerShell administration evidence is included as a separate track. I separated this from the portal-based work because command-line administration and Microsoft Graph workflows should be documented as their own skill area.
+I documented command-line administration separately from the portal-based work because PowerShell and Microsoft Graph support repeatable provisioning, reporting, validation, and cleanup workflows.
 
-![PowerShell command discovery](screenshots/09-powershell-admin-tooling/02-powershell-get-command-by-noun.png)
+This track includes Microsoft Graph PowerShell module setup, delegated tenant authentication, user retrieval, test user creation, Microsoft 365 group creation, subscribed SKU review, license assignment, CSV-based bulk user provisioning, and cleanup of test accounts after verification.
+
+![Microsoft Graph sign-in successful](screenshots/09-powershell-admin-tooling/14-graph-sign-in-successful-redacted.png)
+
+![Microsoft Graph bulk user import command](screenshots/09-powershell-admin-tooling/22-graph-bulk-user-import-command-redacted.png)
+
+![Microsoft Graph license review and assignment](screenshots/09-powershell-admin-tooling/20-graph-license-review-assignment-redacted.png)
 
 ---
 
@@ -118,7 +125,7 @@ Evidence is organized by operational workstream:
 | Licensing & Service Access | [`screenshots/06-licensing-service-access`](screenshots/06-licensing-service-access) | [`docs/licensing-service-access-review.md`](docs/licensing-service-access-review.md) |
 | Service Health & Network Insights | [`screenshots/07-service-health-network-insights`](screenshots/07-service-health-network-insights) | [`docs/service-health-backup-readiness.md`](docs/service-health-backup-readiness.md) |
 | Backup Readiness | [`screenshots/08-operational-resilience-backup`](screenshots/08-operational-resilience-backup) | [`docs/service-health-backup-readiness.md`](docs/service-health-backup-readiness.md) |
-| PowerShell Admin Tooling | [`screenshots/09-powershell-admin-tooling`](screenshots/09-powershell-admin-tooling) | [`docs/powershell-graph-administration.md`](docs/powershell-graph-administration.md) |
+| PowerShell & Microsoft Graph Administration | [`screenshots/09-powershell-admin-tooling`](screenshots/09-powershell-admin-tooling) | [`docs/powershell-graph-administration.md`](docs/powershell-graph-administration.md) |
 
 > **Screenshot note:** The full screenshot archive supporting these workstreams is available in the [`screenshots/`](screenshots/) directory.
 
@@ -133,6 +140,9 @@ Evidence is organized by operational workstream:
 * Created and reviewed Microsoft 365 group settings, owners, members, and Entra-side group properties.
 * Reviewed license inventory, assignment views, and service access settings used during account troubleshooting.
 * Checked service health, network insights, software update visibility, Log Analytics exposure, and Microsoft 365 Backup readiness.
+* Installed and authenticated Microsoft Graph PowerShell in a non-production Microsoft 365 tenant.
+* Used Microsoft Graph PowerShell to retrieve users, create test users, create Microsoft 365 groups, review subscribed SKUs, assign licenses, and validate changes through admin portal review.
+* Practiced CSV-based bulk user provisioning and cleanup while treating temporary passwords, object IDs, tenant IDs, and account identifiers as sensitive public-screenshot data.
 * Documented the work with Markdown, organized screenshots by workflow, and maintained the project in GitHub for portfolio review.
 
 ---

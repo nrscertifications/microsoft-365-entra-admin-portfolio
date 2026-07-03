@@ -2,7 +2,6 @@
 
 Screenshots are grouped by administrative workstream so the repository reads as a professional Microsoft 365 / Entra ID administration portfolio rather than a course checklist.
 
-
 ## 01-tenant-foundation
 
 Evidence count: 9
@@ -17,7 +16,6 @@ Evidence count: 9
 * `13-tenant-management.png`
 * `14-resource-groups.png`
 
-
 ## 02-domain-readiness
 
 Evidence count: 4
@@ -26,7 +24,6 @@ Evidence count: 4
 * `02-custom-domain-azure02.png`
 * `03-custom-domain-azure03-verified.png`
 * `04-custom-domain-verified.png`
-
 
 ## 03-user-provisioning
 
@@ -59,7 +56,6 @@ Evidence count: 38
 * `25-azure-portal-user-create-02.png`
 * ...additional supporting screenshots in this folder.
 
-
 ## 04-external-collaboration-contacts
 
 Evidence count: 8
@@ -72,7 +68,6 @@ Evidence count: 8
 * `06-external-guest-invitation-03.png`
 * `07-external-guest-invitation-04.png`
 * `08-outlook-navigation-check.png`
-
 
 ## 05-group-collaboration
 
@@ -105,7 +100,6 @@ Evidence count: 27
 * `25-groups-add-entra-id-m365-group-properties-07.png`
 * ...additional supporting screenshots in this folder.
 
-
 ## 06-licensing-service-access
 
 Evidence count: 7
@@ -117,7 +111,6 @@ Evidence count: 7
 * `05-license-inventory-review-05-marketplace-navigation-comparison-2.png`
 * `06-license-inventory-review-05-marketplace-navigation-comparison-3.png`
 * `07-license-inventory-review-05-marketplace-navigation-1.png`
-
 
 ## 07-service-health-network-insights
 
@@ -131,7 +124,6 @@ Evidence count: 8
 * `06-log-analytics-workspace-validationpass-02.png`
 * `07-log-analytics-workspace-delete-azure-software-updates-006.png`
 * `08-log-analytics-workspace-screen-01.png`
-
 
 ## 08-operational-resilience-backup
 
@@ -153,10 +145,9 @@ Evidence count: 15
 * `14-backup-payg-policy-connect-billing-07.png`
 * `15-backup-payg-policy-connect01.png`
 
-
 ## 09-powershell-admin-tooling
 
-Evidence count: 10
+Evidence count: 26
 
 * `01-powershell-clear-screen.png`
 * `02-powershell-get-command-by-noun.png`
@@ -168,3 +159,19 @@ Evidence count: 10
 * `08-powershell-show-all-services.png`
 * `09-powershell-variable-calculations.png`
 * `10-powershell-variables-eventlog-formatted-output-to-file.png`
+* `11-graph-module-installation-review-redacted.png`
+* `12-graph-module-installation-complete-redacted.png`
+* `13-graph-admin-sign-in-prompt-redacted.png`
+* `14-graph-sign-in-successful-redacted.png`
+* `15-graph-user-list-review-redacted.png`
+* `16-graph-create-user-command-redacted.png`
+* `17-graph-created-user-admin-center-verification-redacted.png`
+* `18-graph-create-group-command-redacted.png`
+* `19-graph-group-admin-center-verification-redacted.png`
+* `20-graph-license-review-assignment-redacted.png`
+* `21-graph-bulk-user-csv-review-redacted.png`
+* `22-graph-bulk-user-import-command-redacted.png`
+* `23-graph-bulk-users-created-admin-center-verification-redacted.png`
+* `24-graph-bulk-user-removal-command-redacted.png`
+* `25-graph-bulk-users-removed-admin-center-verification-redacted.png`
+* `26-graph-user-review-and-cleanup-command-redacted.png`
