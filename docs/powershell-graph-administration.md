@@ -1,153 +1,114 @@
-# PowerShell & Microsoft Graph Administration Track
+# PowerShell & Microsoft Graph Administration
 
-## Administrative Objective
+## Overview
 
-Document command-line administration tasks that support Microsoft 365 and Microsoft Entra ID user, group, licensing, and cleanup workflows through PowerShell and Microsoft Graph.
+This document captures the command-line administration portion of the Microsoft 365 / Entra ID portfolio. The goal was to move beyond portal-only administration and practice repeatable Microsoft Graph PowerShell workflows for user review, user creation, group creation, license review, license assignment, CSV-based bulk provisioning, and cleanup.
 
-This track is separated from the portal-based administration work because command-line administration supports repeatable provisioning, reporting, validation, and cleanup tasks that are common in service desk, technical support, and junior systems administration environments.
+The work was completed in a non-production Microsoft 365 tenant using fictional users and lab-only objects. Temporary password values visible in command examples were redacted before publishing. User names, lab email addresses, and verification results are intentionally visible because they show the workflow clearly for employer review.
 
-## Work Completed
+## Environment
 
-  * Reviewed PowerShell command discovery, command output, execution policy behavior, variables, and basic command-line workflow.
-  * Installed the Microsoft Graph PowerShell module from the PowerShell Gallery.
-  * Completed Microsoft Graph sign-in using delegated access in a dedicated non-production Microsoft 365 tenant.
-  * Connected with Graph permission scopes for organization review, user administration, and group administration.
-  * Retrieved Microsoft 365 / Entra ID users through Microsoft Graph PowerShell.
-  * Created a test user account through `New-MgUser` and verified the account in the Microsoft 365 admin center.
-  * Created a Microsoft 365 group through `New-MgGroup` and verified the group object in the admin portal.
-  * Reviewed subscribed SKU information and license consumption through `Get-MgSubscribedSku`.
-  * Assigned a Microsoft 365 license to a test user through Microsoft Graph PowerShell.
-  * Built a CSV-based bulk user provisioning workflow and verified created users in the admin portal.
-  * Used CSV-based lookup logic to remove bulk-created test users after verification.
-  * Documented troubleshooting observations around authentication, Graph scopes, CSV formatting, and public-safe screenshot handling.
+* Microsoft 365 E5 trial tenant
+* Microsoft Entra ID user and group objects
+* Microsoft Graph PowerShell SDK
+* Windows PowerShell
+* Microsoft 365 admin center
+* Microsoft Entra admin center
+* CSV input for bulk user provisioning
 
-## Support Relevance
+## Scope of Work
 
-Microsoft Graph PowerShell is useful for support and administration tasks where portal-only work becomes repetitive or difficult to audit. Examples include reviewing users, provisioning accounts, checking license availability, assigning licenses, creating groups, and cleaning up test or temporary accounts.
+* Installed and reviewed Microsoft Graph PowerShell module usage.
+* Connected to the Microsoft 365 tenant using delegated Microsoft Graph permissions.
+* Reviewed existing tenant users from PowerShell.
+* Created a test user through Microsoft Graph PowerShell.
+* Verified the created user in the Microsoft 365 admin center.
+* Created a Microsoft 365 group through Microsoft Graph PowerShell.
+* Verified the group in the admin portal.
+* Reviewed subscribed SKUs and consumed license units.
+* Assigned a license to a test user through PowerShell.
+* Created a CSV file for bulk user provisioning.
+* Imported users from CSV using Microsoft Graph PowerShell.
+* Verified bulk-created users in the admin center.
+* Removed bulk-created test users through PowerShell after validation.
 
-For service desk and junior systems support work, this reinforces the difference between manual portal administration and repeatable command-driven administration. It also shows why identity creation, license state, group membership, and post-change verification should be treated as separate checks instead of one combined assumption.
+## Workflow Summary
 
-## Microsoft Graph Connection Workflow
+### 1. Microsoft Graph PowerShell setup
 
-The Microsoft Graph module was installed and tested from Windows PowerShell. After module installation, I connected to the Microsoft 365 tenant using delegated authentication and the required Graph scopes for the lab tasks.
+I reviewed the Microsoft Graph PowerShell module installation process and confirmed that the module was available for tenant administration work.
 
-The connection workflow included:
+![Microsoft Graph module installation review](../screenshots/09-powershell-admin-tooling/11-graph-module-installation-review.png)
 
-  * Reviewing execution policy behavior before module installation.
-  * Installing the Microsoft Graph PowerShell module.
-  * Completing interactive Microsoft sign-in.
-  * Verifying successful connection to Microsoft Graph.
-  * Reviewing Web Account Manager behavior during sign-in.
-  * Reconnecting with corrected Graph permission scopes when additional write permissions were required.
+![Microsoft Graph module installation complete](../screenshots/09-powershell-admin-tooling/12-graph-module-installation-complete.png)
 
-Sensitive tenant identifiers, application identifiers, and sign-in details were redacted from public screenshots.
+### 2. Tenant authentication and permission scopes
 
-## User Administration Workflow
+I connected to the tenant with Microsoft Graph PowerShell using delegated permissions. This required tenant sign-in and Graph scopes for organization, group, and user administration.
 
-I used Microsoft Graph PowerShell to retrieve existing users, create a test user, and validate the account after creation.
+![Microsoft Graph admin sign-in prompt](../screenshots/09-powershell-admin-tooling/13-graph-admin-sign-in-prompt.png)
 
-The user workflow included:
+![Microsoft Graph sign-in successful](../screenshots/09-powershell-admin-tooling/14-graph-sign-in-successful.png)
 
-  * Reviewing existing users with Microsoft Graph PowerShell.
-  * Creating a test user account with account enabled state, display name, mail nickname, user principal name, and password profile values.
-  * Setting the account to require password change at next sign-in.
-  * Verifying the created account in the Microsoft 365 admin center.
-  * Reviewing the created user through Graph commands before cleanup.
+### 3. User review and single-user creation
 
-Temporary credentials and user principal names were treated as sensitive lab data and redacted from public evidence where appropriate.
+After connecting, I reviewed existing users and created a test user through PowerShell. The user was then verified in the Microsoft 365 admin center.
 
-## Group Administration Workflow
+![Microsoft Graph user list review](../screenshots/09-powershell-admin-tooling/15-graph-user-list-review.png)
 
-I created and verified a Microsoft 365 group through Microsoft Graph PowerShell.
+![Microsoft Graph create user command with temporary password redacted](../screenshots/09-powershell-admin-tooling/16-graph-create-user-command-password-redacted.png)
 
-The group workflow included:
+![Created user verified in Microsoft 365 admin center](../screenshots/09-powershell-admin-tooling/17-graph-created-user-admin-center-verification.png)
 
-  * Creating a Microsoft 365 group object through `New-MgGroup`.
-  * Reviewing the returned group properties after creation.
-  * Verifying the group from the Microsoft Entra / Microsoft 365 group listing.
-  * Comparing command-line creation output with portal-side validation.
+### 4. Group creation and portal validation
 
-This supports group-based administration concepts used in Microsoft 365 collaboration, access assignment, and license or service targeting workflows.
+I created a Microsoft 365 group through Microsoft Graph PowerShell and validated the object in the admin portal. This demonstrated how command-line object creation can be confirmed through the graphical admin interface.
 
-## Licensing Review and Assignment Workflow
+![Microsoft Graph create group command](../screenshots/09-powershell-admin-tooling/18-graph-create-group-command.png)
 
-I reviewed subscribed license SKUs and license consumption through Microsoft Graph PowerShell, then assigned a license to a test user.
+![Microsoft Graph group verified in admin portal](../screenshots/09-powershell-admin-tooling/19-graph-group-admin-center-verification.png)
 
-The licensing workflow included:
+### 5. License review and assignment
 
-  * Reviewing subscribed SKUs with `Get-MgSubscribedSku`.
-  * Checking SKU part numbers, SKU IDs, and consumed unit counts.
-  * Assigning a license to a test user with `Set-MgUserLicense`.
-  * Verifying that user creation, account visibility, and license assignment are separate administrative checks.
+I reviewed subscribed SKUs, checked consumed units, and assigned a license to a test user through PowerShell. This workflow is relevant to account provisioning and access troubleshooting because license state directly affects available Microsoft 365 services.
 
-This is relevant to Microsoft 365 support because service access issues can be caused by user state, license assignment, service plan availability, or group-based access rather than the account object alone.
+![Microsoft Graph license review and assignment](../screenshots/09-powershell-admin-tooling/20-graph-license-review-assignment.png)
 
-## CSV-Based Bulk User Provisioning
+### 6. CSV-based bulk user provisioning
 
-I created a CSV-based workflow for bulk user creation through Microsoft Graph PowerShell.
+I created a CSV input file with display names, mail nicknames, and user principal names. The CSV was imported through PowerShell to create multiple users with consistent attributes.
 
-The CSV structure used the following fields:
+![CSV review for bulk user provisioning](../screenshots/09-powershell-admin-tooling/21-graph-bulk-user-csv-review.png)
 
-```csv
-DisplayName,MailNickname,UserPrincipalName
-Sample User,sampleuser,sampleuser@example.com
-```
+![Microsoft Graph bulk user import command with temporary password redacted](../screenshots/09-powershell-admin-tooling/22-graph-bulk-user-import-command-password-redacted.png)
 
-The bulk workflow included:
+![Bulk-created users verified in admin portal](../screenshots/09-powershell-admin-tooling/23-graph-bulk-users-created-admin-center-verification.png)
 
-  * Creating a CSV file with display names, mail nicknames, and user principal names.
-  * Importing the CSV with `Import-Csv`.
-  * Passing each row into `New-MgUser` through a `ForEach-Object` loop.
-  * Applying a password profile consistently across created users.
-  * Verifying the newly created users in the Microsoft 365 / Entra user listing.
-  * Removing the bulk-created test users after verification.
+### 7. Cleanup and verification
 
-The workflow was documented as a controlled lab exercise. Public screenshots use redaction for temporary passwords, user principal names, tenant identifiers, and object IDs.
+After validating the bulk-created users, I removed the test accounts through PowerShell and verified that the objects were no longer visible in the active user list. This closed the lab workflow cleanly and demonstrated cleanup discipline.
 
-## Troubleshooting and Controls Observed
+![CSV-based bulk user removal command](../screenshots/09-powershell-admin-tooling/24-graph-bulk-user-removal-command.png)
 
-  * Microsoft Graph PowerShell installation completed successfully after reviewing module installation and NuGet provider behavior.
-  * Authentication was validated separately from module installation because module installation does not prove tenant sign-in access.
-  * Graph permission scopes were reviewed and corrected before repeating write operations.
-  * CSV-based provisioning was checked as a separate input-control step before account creation.
-  * Temporary passwords were not published in public documentation.
-  * Tenant IDs, object IDs, application IDs, and account identifiers were redacted where they did not add review value.
-  * Created test users and groups were verified after creation instead of assuming success from command completion alone.
-  * Test users created for bulk provisioning were removed after the workflow was validated.
+![Bulk-created users removed after verification](../screenshots/09-powershell-admin-tooling/25-graph-bulk-users-removed-admin-center-verification.png)
 
-## Evidence
+![Microsoft Graph user review and cleanup command](../screenshots/09-powershell-admin-tooling/26-graph-user-review-and-cleanup-command.png)
 
-![Microsoft Graph module installation review](../screenshots/09-powershell-admin-tooling/11-graph-module-installation-review-redacted.png)
+## Troubleshooting Notes
 
-![Microsoft Graph module installation complete](../screenshots/09-powershell-admin-tooling/12-graph-module-installation-complete-redacted.png)
+During the lab, I ran into realistic setup and execution issues:
 
-![Microsoft Graph admin sign-in prompt](../screenshots/09-powershell-admin-tooling/13-graph-admin-sign-in-prompt-redacted.png)
+* Tenant sign-in required the correct Microsoft 365 admin account and password reset before Graph authentication succeeded.
+* The permission scope needed to support write operations, not just read-only organization review.
+* CSV input needed to be saved as a CSV file, not an Excel workbook, so `Import-Csv` could parse the headers correctly.
+* A failed bulk user creation attempt was traced by checking the exact input columns being passed into `New-MgUser`.
 
-![Microsoft Graph sign-in successful](../screenshots/09-powershell-admin-tooling/14-graph-sign-in-successful-redacted.png)
+## Security and Publishing Notes
 
-![Microsoft Graph user list review](../screenshots/09-powershell-admin-tooling/15-graph-user-list-review-redacted.png)
-
-![Microsoft Graph create user command](../screenshots/09-powershell-admin-tooling/16-graph-create-user-command-redacted.png)
-
-![Created user verified in Microsoft 365 admin center](../screenshots/09-powershell-admin-tooling/17-graph-created-user-admin-center-verification-redacted.png)
-
-![Microsoft Graph create group command](../screenshots/09-powershell-admin-tooling/18-graph-create-group-command-redacted.png)
-
-![Microsoft Graph group verified in admin portal](../screenshots/09-powershell-admin-tooling/19-graph-group-admin-center-verification-redacted.png)
-
-![Microsoft Graph license review and assignment](../screenshots/09-powershell-admin-tooling/20-graph-license-review-assignment-redacted.png)
-
-![CSV review for bulk user provisioning](../screenshots/09-powershell-admin-tooling/21-graph-bulk-user-csv-review-redacted.png)
-
-![Microsoft Graph bulk user import command](../screenshots/09-powershell-admin-tooling/22-graph-bulk-user-import-command-redacted.png)
-
-![Bulk-created users verified in admin portal](../screenshots/09-powershell-admin-tooling/23-graph-bulk-users-created-admin-center-verification-redacted.png)
-
-![CSV-based bulk user removal command](../screenshots/09-powershell-admin-tooling/24-graph-bulk-user-removal-command-redacted.png)
-
-![Bulk-created users removed after verification](../screenshots/09-powershell-admin-tooling/25-graph-bulk-users-removed-admin-center-verification-redacted.png)
-
-![Microsoft Graph user review and cleanup command](../screenshots/09-powershell-admin-tooling/26-graph-user-review-and-cleanup-command-redacted.png)
+* Temporary password values were redacted before publishing screenshots.
+* No production customer data or live business records are included.
+* The users, groups, and email addresses shown are lab-created objects for portfolio documentation.
+* Test objects were removed after the workflow was validated.
 
 ## Outcome
 

@@ -8,7 +8,7 @@ I configured the work in a dedicated non-production Microsoft 365 tenant using f
 
 The goal of this project was to understand how the Microsoft 365 admin center, Microsoft Entra admin center, Azure portal, and Microsoft Graph PowerShell connect across tenant setup, identity objects, licensing, collaboration, operational support views, and command-line administration.
 
-> **Data and lab context note:** Screenshots use fictional users, test objects, and sample external collaboration targets created only for this Microsoft 365 / Entra ID lab. The primary administrative environment for this project was the Microsoft 365 tenant documented in the tenant foundation workflow. Temporary passwords and tenant-specific identifiers that do not add review value were redacted. No production customer data, private user data, or live business records are included.
+> **Data and lab context note:** Screenshots use fictional users, test objects, and sample external collaboration targets created only for this Microsoft 365 / Entra ID lab. User names and lab email addresses are intentionally visible where they help show workflow verification. Temporary password values shown in command examples or portal output were redacted before publishing. No production customer data, private user data, or live business records are included.
 
 ---
 
@@ -103,11 +103,11 @@ I documented command-line administration separately from the portal-based work b
 
 This track includes Microsoft Graph PowerShell module setup, delegated tenant authentication, user retrieval, test user creation, Microsoft 365 group creation, subscribed SKU review, license assignment, CSV-based bulk user provisioning, and cleanup of test accounts after verification.
 
-![Microsoft Graph sign-in successful](screenshots/09-powershell-admin-tooling/14-graph-sign-in-successful-redacted.png)
+![Microsoft Graph sign-in successful](screenshots/09-powershell-admin-tooling/14-graph-sign-in-successful.png)
 
-![Microsoft Graph bulk user import command](screenshots/09-powershell-admin-tooling/22-graph-bulk-user-import-command-redacted.png)
+![Microsoft Graph bulk user import command with temporary password redacted](screenshots/09-powershell-admin-tooling/22-graph-bulk-user-import-command-password-redacted.png)
 
-![Microsoft Graph license review and assignment](screenshots/09-powershell-admin-tooling/20-graph-license-review-assignment-redacted.png)
+![Microsoft Graph license review and assignment](screenshots/09-powershell-admin-tooling/20-graph-license-review-assignment.png)
 
 ---
 
@@ -125,9 +125,9 @@ Evidence is organized by operational workstream:
 | Licensing & Service Access | [`screenshots/06-licensing-service-access`](screenshots/06-licensing-service-access) | [`docs/licensing-service-access-review.md`](docs/licensing-service-access-review.md) |
 | Service Health & Network Insights | [`screenshots/07-service-health-network-insights`](screenshots/07-service-health-network-insights) | [`docs/service-health-backup-readiness.md`](docs/service-health-backup-readiness.md) |
 | Backup Readiness | [`screenshots/08-operational-resilience-backup`](screenshots/08-operational-resilience-backup) | [`docs/service-health-backup-readiness.md`](docs/service-health-backup-readiness.md) |
-| PowerShell & Microsoft Graph Administration | [`screenshots/09-powershell-admin-tooling`](screenshots/09-powershell-admin-tooling) | [`docs/powershell-graph-administration.md`](docs/powershell-graph-administration.md) |
+| PowerShell Admin Tooling | [`screenshots/09-powershell-admin-tooling`](screenshots/09-powershell-admin-tooling) | [`docs/powershell-graph-administration.md`](docs/powershell-graph-administration.md) |
 
-> **Screenshot note:** The full screenshot archive supporting these workstreams is available in the [`screenshots/`](screenshots/) directory.
+> Screenshot note: The full screenshot archive supporting these workstreams is available in the [`screenshots/`](screenshots/) directory.
 
 ---
 
@@ -136,34 +136,28 @@ Evidence is organized by operational workstream:
 * Built and validated a non-production Microsoft 365 tenant for administration practice.
 * Created and reviewed member users across Microsoft 365 admin center, Azure portal, and Microsoft Entra admin center.
 * Practiced manual and bulk user provisioning workflows, including post-creation verification.
+* Used Microsoft Graph PowerShell to connect to a tenant, retrieve users, create users, create groups, review licensing, assign licenses, bulk-provision users from CSV, and clean up test accounts.
 * Separated internal users, guest users, and external contacts based on how each object is used in Microsoft 365 and Entra ID.
 * Created and reviewed Microsoft 365 group settings, owners, members, and Entra-side group properties.
-* Reviewed license inventory, assignment views, and service access settings used during account troubleshooting.
-* Checked service health, network insights, software update visibility, Log Analytics exposure, and Microsoft 365 Backup readiness.
-* Installed and authenticated Microsoft Graph PowerShell in a non-production Microsoft 365 tenant.
-* Used Microsoft Graph PowerShell to retrieve users, create test users, create Microsoft 365 groups, review subscribed SKUs, assign licenses, and validate changes through admin portal review.
-* Practiced CSV-based bulk user provisioning and cleanup while treating temporary passwords, object IDs, tenant IDs, and account identifiers as sensitive public-screenshot data.
-* Documented the work with Markdown, organized screenshots by workflow, and maintained the project in GitHub for portfolio review.
+* Reviewed license inventory and service access views for troubleshooting and access-readiness awareness.
+* Reviewed operational admin views related to service health, network insights, software update visibility, and backup readiness.
+* Organized screenshots, evidence notes, and markdown documentation into a structured public GitHub portfolio.
 
 ---
 
-## Project Documentation
+## Intended Role Alignment
 
-Detailed documentation is located in the [`docs/`](docs/) folder:
+This portfolio is aligned with entry-level and junior IT operations roles where Microsoft 365, Entra ID, user support, ticket triage, documentation, and escalation awareness are important:
 
-* [`Project Overview`](docs/project-overview.md)
-* [`Tenant Foundation & Domain Readiness`](docs/tenant-foundation-domain-readiness.md)
-* [`User Lifecycle Administration`](docs/user-lifecycle-administration.md)
-* [`External Collaboration & Contacts`](docs/external-collaboration-contacts.md)
-* [`Group Collaboration Management`](docs/group-collaboration-management.md)
-* [`Licensing & Service Access Review`](docs/licensing-service-access-review.md)
-* [`Service Health, Network Insights & Backup Readiness`](docs/service-health-backup-readiness.md)
-* [`PowerShell & Microsoft Graph Administration Track`](docs/powershell-graph-administration.md)
-* [`Evidence Index`](docs/evidence-index.md)
-* [`Screenshot Publishing Notes`](docs/screenshot-publishing-notes.md)
+* IT Support Technician
+* Service Desk Analyst
+* Help Desk Analyst
+* Technical Support Analyst
+* Desktop Support Technician
+* Junior Systems Support Technician
 
 ---
 
-## Repository Scope
+## Notes
 
-This portfolio demonstrates hands-on administration in a controlled Microsoft 365 environment. It does not contain production customer data, production credentials, private user data, or live business records.
+This is a non-production learning and portfolio environment. The focus is on administrative workflow understanding, safe lab documentation, and support-oriented troubleshooting awareness rather than production tenant ownership.
