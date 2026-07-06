@@ -22,6 +22,7 @@ The goal of this project was to understand how the Microsoft 365 admin center, M
 * **User Lifecycle Administration:** Manual provisioning, bulk provisioning, profile properties, account state review, license review, and cross-portal verification
 * **External Collaboration:** B2B guest invitation workflow, external contacts, address book visibility concepts, and Outlook web access validation
 * **Group Administration:** Microsoft 365 groups, owners, members, group properties, Entra group validation, and dynamic membership exposure
+* **Role-Based Access & Delegated Administration:** Microsoft 365 and Entra role review, role assignments, administrative units, scoped delegation, Defender/Purview role groups, and PIM access review
 * **Operational Readiness:** Service health, network insights, software update visibility, and Microsoft 365 Backup readiness review
 * **Documentation & Version Control:** Markdown documentation, screenshot evidence mapping, Git/GitHub portfolio structure, and technical portfolio publishing
 
@@ -109,6 +110,18 @@ This track includes Microsoft Graph PowerShell module setup, delegated tenant au
 
 ![Microsoft Graph license review and assignment](screenshots/09-powershell-admin-tooling/20-graph-license-review-assignment.png)
 
+### 9. Role-Based Access & Delegated Administration
+
+I reviewed administrative role management across Microsoft 365 admin center, Microsoft Entra admin center, Defender XDR, Microsoft Purview, administrative units, and Privileged Identity Management.
+
+This work focused on least-privilege awareness, role descriptions, role permissions, scoped delegation, role group membership, and temporary/eligible administrative access through PIM.
+
+![Microsoft 365 role assignment review](screenshots/10-role-based-access-delegation/12-m365-admin-center-role-assignment-complete.png)
+
+![Administrative unit scoped role confirmation](screenshots/10-role-based-access-delegation/22-administrative-unit-scoped-role-confirmation.png)
+
+![PIM eligible assignment confirmation](screenshots/10-role-based-access-delegation/31-pim-eligible-assignment-confirmation.png)
+
 ---
 
 ## Configuration Walkthrough & Evidence Map
@@ -126,6 +139,7 @@ Evidence is organized by operational workstream:
 | Service Health & Network Insights | [`screenshots/07-service-health-network-insights`](screenshots/07-service-health-network-insights) | [`docs/service-health-backup-readiness.md`](docs/service-health-backup-readiness.md) |
 | Backup Readiness | [`screenshots/08-operational-resilience-backup`](screenshots/08-operational-resilience-backup) | [`docs/service-health-backup-readiness.md`](docs/service-health-backup-readiness.md) |
 | PowerShell Admin Tooling | [`screenshots/09-powershell-admin-tooling`](screenshots/09-powershell-admin-tooling) | [`docs/powershell-graph-administration.md`](docs/powershell-graph-administration.md) |
+| Role-Based Access & Delegation | [`screenshots/10-role-based-access-delegation`](screenshots/10-role-based-access-delegation) | [`docs/role-based-access-delegated-administration.md`](docs/role-based-access-delegated-administration.md) |
 
 > Screenshot note: The full screenshot archive supporting these workstreams is available in the [`screenshots/`](screenshots/) directory.
 

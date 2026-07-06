@@ -175,3 +175,38 @@ Evidence count: 26
 * `24-graph-bulk-user-removal-command.png`
 * `25-graph-bulk-users-removed-admin-center-verification.png`
 * `26-graph-user-review-and-cleanup-command.png`
+
+## 10-role-based-access-delegation
+Evidence count: 31
+* `01-entra-roles-and-administrators-overview.png`
+* `02-entra-role-description-review.png`
+* `03-entra-role-permissions-review.png`
+* `04-entra-role-settings-review.png`
+* `05-helpdesk-administrator-role-review.png`
+* `06-intune-administrator-role-review.png`
+* `07-entra-role-assignment-start.png`
+* `08-entra-role-assignment-member-selection.png`
+* `09-entra-role-assignment-success.png`
+* `10-m365-admin-center-role-overview.png`
+* `11-m365-admin-center-assign-role.png`
+* `12-m365-admin-center-role-assignment-complete.png`
+* `13-exchange-admin-center-role-view.png`
+* `14-intune-admin-center-role-view.png`
+* `15-defender-xdr-permissions-review.png`
+* `16-defender-email-collaboration-role-review.png`
+* `17-purview-role-groups-review.png`
+* `18-purview-role-group-assignment-review.png`
+* `19-purview-role-group-assignment-confirmation.png`
+* `20-administrative-units-overview.png`
+* `21-administrative-unit-role-assignment-selection.png`
+* `22-administrative-unit-scoped-role-confirmation.png`
+* `23-administrative-unit-member-confirmation.png`
+* `24-administrative-unit-entra-user-confirmation.png`
+* `25-administrative-unit-scope-check.png`
+* `26-administrative-unit-dynamic-membership-query.png`
+* `27-pim-overview.png`
+* `28-pim-eligible-roles-review.png`
+* `29-pim-managed-role-assignment-review.png`
+* `30-pim-eligible-assignment-configuration.png`
+* `31-pim-eligible-assignment-confirmation.png`
+
