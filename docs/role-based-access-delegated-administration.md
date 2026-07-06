@@ -1,97 +1,118 @@
 # Role-Based Access & Delegated Administration
 
 ## Administrative Objective
-Review Microsoft 365 and Microsoft Entra role administration workflows used to control administrative access, scope responsibilities, and support least-privilege operations in a non-production tenant.
+Administer Microsoft 365 and Microsoft Entra role-based access workflows used to assign administrative permissions, scope responsibilities, and support least-privilege operations in a non-production tenant.
 
-This section focuses on how admin permissions are reviewed and assigned across Microsoft 365 admin center, Microsoft Entra admin center, Microsoft Defender XDR, Microsoft Purview, administrative units, and Privileged Identity Management.
+This section documents hands-on role administration across Microsoft Entra admin center, Microsoft 365 admin center, Microsoft Defender XDR, Microsoft Purview, administrative units, and Privileged Identity Management concepts. The workflow focuses on how roles are selected, assigned, scoped, validated, and removed when access needs to be controlled across Microsoft 365 services.
 
 ## Work Completed
 
-* Reviewed Microsoft Entra role categories, role descriptions, permission details, and role settings.
-* Reviewed common admin roles used in support and operations, including Helpdesk Administrator, Global Reader, Exchange Administrator, Intune Administrator, Teams Administrator, SharePoint Administrator, and Identity Governance Administrator.
-* Assigned an administrative role to a lab user and validated the role assignment workflow.
-* Reviewed Microsoft 365 admin center role assignment behavior and compared it with Entra role management.
-* Reviewed role and permission areas across Microsoft Defender XDR and Microsoft Purview.
-* Reviewed Microsoft Purview role groups, role group assignment, confirmation, and removal workflow.
-* Created and reviewed administrative units for scoped delegation.
+* Validated Microsoft Entra role categories, role descriptions, permission details, and role settings before assignment.
+* Compared support and operations roles including Helpdesk Administrator, Global Reader, Exchange Administrator, Intune Administrator, Teams Administrator, SharePoint Administrator, and Identity Governance Administrator.
+* Assigned an administrative role to a lab user and confirmed the completed role assignment in Microsoft Entra.
+* Administered Microsoft 365 admin center role assignment workflows and compared Microsoft 365 role behavior with Microsoft Entra role management.
+* Checked workload-specific role and permission surfaces across Exchange admin center, Intune admin center, Microsoft Defender XDR, and Microsoft Purview.
+* Managed Microsoft Purview role group workflows, including role group assignment, confirmation, validation, and removal.
+* Created administrative units to support scoped delegation.
 * Assigned a scoped User Administrator role through an administrative unit.
-* Added lab users to an administrative unit and verified membership through Microsoft 365 admin center and Microsoft Entra admin center.
-* Reviewed administrative unit scope behavior and dynamic membership query exposure.
-* Reviewed Privileged Identity Management views for eligible roles, active roles, pending requests, expired roles, approval views, and role assignment management.
-* Configured and validated a PIM-style eligible assignment workflow for temporary role access.
+* Added lab users to an administrative unit and verified membership through both Microsoft 365 admin center and Microsoft Entra admin center.
+* Confirmed administrative unit scope behavior, membership visibility, and dynamic membership query exposure.
+* Worked through Privileged Identity Management views for eligible roles, active roles, pending requests, expired roles, approval views, and role assignment management.
+* Configured and validated a PIM-style eligible assignment workflow for temporary administrative access.
 
 ## Support Relevance
 Role management is a core part of secure Microsoft 365 administration. Support and junior administration teams need to understand what an assigned role allows, where the role is managed, whether the assignment is tenant-wide or scoped, and how temporary access can be controlled.
 
-This workflow is relevant to service desk and support scenarios where a user needs limited administrative rights for a defined support task, a team needs scoped access to a subset of users, or an administrator needs to confirm whether a role assignment is active, eligible, pending, expired, or limited by administrative unit scope.
+This workflow is relevant to service desk and support scenarios where a technician, administrator, or delegated support user requires limited administrative access for a defined support task without receiving unnecessary tenant-wide permissions.
+
+Administrative units are especially relevant for scoped delegation because they allow administrative responsibility to be limited to a defined subset of users instead of the full organization.
 
 ## Workflow Evidence
 
-### Microsoft Entra role review
+### Role inventory and permission validation
 
-![Entra roles and administrators overview](../screenshots/10-role-based-access-delegation/01-entra-roles-and-administrators-overview.png)
+![Microsoft Entra roles and administrators catalog](../screenshots/10-role-based-access-delegation/01-entra-roles-and-administrators-overview.png)
 
-![Entra role description review](../screenshots/10-role-based-access-delegation/02-entra-role-description-review.png)
+![Microsoft Entra role description validation](../screenshots/10-role-based-access-delegation/02-entra-role-description-validation.png)
 
-![Entra role permissions review](../screenshots/10-role-based-access-delegation/03-entra-role-permissions-review.png)
+![Microsoft Entra role permissions validation](../screenshots/10-role-based-access-delegation/03-entra-role-permissions-validation.png)
 
-![Helpdesk Administrator role review](../screenshots/10-role-based-access-delegation/05-helpdesk-administrator-role-review.png)
+![Helpdesk Administrator role validation](../screenshots/10-role-based-access-delegation/05-helpdesk-administrator-role-validation.png)
 
-### Role assignment workflow
+### Role assignment administration
 
-![Entra role assignment start](../screenshots/10-role-based-access-delegation/07-entra-role-assignment-start.png)
+![Microsoft Entra role assignment workflow start](../screenshots/10-role-based-access-delegation/07-entra-role-assignment-start.png)
 
-![Entra role assignment member selection](../screenshots/10-role-based-access-delegation/08-entra-role-assignment-member-selection.png)
+![Microsoft Entra role assignment member selection](../screenshots/10-role-based-access-delegation/08-entra-role-assignment-member-selection.png)
 
-![Entra role assignment success](../screenshots/10-role-based-access-delegation/09-entra-role-assignment-success.png)
+![Microsoft Entra role assignment completed](../screenshots/10-role-based-access-delegation/09-entra-role-assignment-success.png)
 
-### Microsoft 365 admin center role review
+### Microsoft 365 admin center role administration
 
-![Microsoft 365 admin center role overview](../screenshots/10-role-based-access-delegation/10-m365-admin-center-role-overview.png)
+![Microsoft 365 admin center role management overview](../screenshots/10-role-based-access-delegation/10-m365-admin-center-role-management-overview.png)
 
-![Microsoft 365 admin center assign role](../screenshots/10-role-based-access-delegation/11-m365-admin-center-assign-role.png)
+![Microsoft 365 admin center role assignment workflow](../screenshots/10-role-based-access-delegation/11-m365-admin-center-assign-role.png)
 
-![Microsoft 365 admin center role assignment complete](../screenshots/10-role-based-access-delegation/12-m365-admin-center-role-assignment-complete.png)
+![Microsoft 365 admin center role assignment completed](../screenshots/10-role-based-access-delegation/12-m365-admin-center-role-assignment-complete.png)
 
-### Defender XDR and Purview role groups
+### Workload permission surfaces and role groups
 
-![Defender XDR permissions review](../screenshots/10-role-based-access-delegation/15-defender-xdr-permissions-review.png)
+![Exchange admin center role surface](../screenshots/10-role-based-access-delegation/13-exchange-admin-center-role-view.png)
 
-![Defender email and collaboration role review](../screenshots/10-role-based-access-delegation/16-defender-email-collaboration-role-review.png)
+![Intune admin center role surface](../screenshots/10-role-based-access-delegation/14-intune-admin-center-role-view.png)
 
-![Purview role groups review](../screenshots/10-role-based-access-delegation/17-purview-role-groups-review.png)
+![Defender XDR permission surface validation](../screenshots/10-role-based-access-delegation/15-defender-xdr-permission-surface-validation.png)
 
-![Purview role group assignment confirmation](../screenshots/10-role-based-access-delegation/19-purview-role-group-assignment-confirmation.png)
+![Defender email and collaboration role validation](../screenshots/10-role-based-access-delegation/16-defender-email-collaboration-role-validation.png)
+
+![Microsoft Purview role group management](../screenshots/10-role-based-access-delegation/17-purview-role-groups-management.png)
+
+![Microsoft Purview role group assignment workflow](../screenshots/10-role-based-access-delegation/18-purview-role-group-assignment-workflow.png)
+
+![Microsoft Purview role group assignment confirmation](../screenshots/10-role-based-access-delegation/19-purview-role-group-assignment-confirmation.png)
 
 ### Administrative units and scoped delegation
 
-![Administrative units overview](../screenshots/10-role-based-access-delegation/20-administrative-units-overview.png)
+![Administrative units management overview](../screenshots/10-role-based-access-delegation/20-administrative-units-overview.png)
 
-![Administrative unit role assignment selection](../screenshots/10-role-based-access-delegation/21-administrative-unit-role-assignment-selection.png)
+![Administrative unit scoped role assignment selection](../screenshots/10-role-based-access-delegation/21-administrative-unit-role-assignment-selection.png)
 
-![Administrative unit scoped role confirmation](../screenshots/10-role-based-access-delegation/22-administrative-unit-scoped-role-confirmation.png)
+![Administrative unit scoped role assignment confirmation](../screenshots/10-role-based-access-delegation/22-administrative-unit-scoped-role-confirmation.png)
 
 ![Administrative unit member confirmation](../screenshots/10-role-based-access-delegation/23-administrative-unit-member-confirmation.png)
 
-![Administrative unit Entra user confirmation](../screenshots/10-role-based-access-delegation/24-administrative-unit-entra-user-confirmation.png)
+![Administrative unit user membership verified in Microsoft Entra](../screenshots/10-role-based-access-delegation/24-administrative-unit-entra-user-confirmation.png)
 
-![Administrative unit scope check](../screenshots/10-role-based-access-delegation/25-administrative-unit-scope-check.png)
+![Administrative unit scope validation](../screenshots/10-role-based-access-delegation/25-administrative-unit-scope-check.png)
 
-![Administrative unit dynamic membership query](../screenshots/10-role-based-access-delegation/26-administrative-unit-dynamic-membership-query.png)
+![Administrative unit dynamic membership query exposure](../screenshots/10-role-based-access-delegation/26-administrative-unit-dynamic-membership-query.png)
 
-### Privileged Identity Management
+### Privileged Identity Management and eligible access
 
-![PIM overview](../screenshots/10-role-based-access-delegation/27-pim-overview.png)
+![Privileged Identity Management access overview](../screenshots/10-role-based-access-delegation/27-pim-access-management-overview.png)
 
-![PIM eligible roles review](../screenshots/10-role-based-access-delegation/28-pim-eligible-roles-review.png)
+![PIM eligible roles validation](../screenshots/10-role-based-access-delegation/28-pim-eligible-roles-validation.png)
 
-![PIM managed role assignment review](../screenshots/10-role-based-access-delegation/29-pim-managed-role-assignment-review.png)
+![PIM role assignment management](../screenshots/10-role-based-access-delegation/29-pim-role-assignment-management.png)
 
 ![PIM eligible assignment configuration](../screenshots/10-role-based-access-delegation/30-pim-eligible-assignment-configuration.png)
 
 ![PIM eligible assignment confirmation](../screenshots/10-role-based-access-delegation/31-pim-eligible-assignment-confirmation.png)
 
-## Outcome
-Role-based access workflows were reviewed across Microsoft 365, Microsoft Entra, Defender XDR, and Microsoft Purview. Administrative units were used to demonstrate scoped delegation, and Privileged Identity Management was reviewed as a controlled access model for eligible and temporary administrative access.
+## Skills Demonstrated
 
-This strengthens the portfolio beyond basic user and group administration by showing awareness of least privilege, scoped administration, portal-specific role management, and just-in-time access concepts.
+* Microsoft Entra role assignment and validation
+* Microsoft 365 admin center role administration
+* Administrative unit creation and membership management
+* Scoped User Administrator delegation
+* Microsoft Purview role group assignment and removal
+* Defender XDR / Purview / Intune permission awareness
+* Least-privilege access control
+* Privileged Identity Management workflow awareness
+* Cross-portal validation
+* Screenshot-based technical documentation
+
+## Outcome
+Role-based access was administered across Microsoft 365, Microsoft Entra, Defender XDR, and Microsoft Purview surfaces. Administrative units were used to demonstrate scoped delegation, and Privileged Identity Management was used to document eligible and temporary administrative access concepts.
+
+This strengthens the portfolio beyond basic user and group administration by showing practical exposure to least privilege, scoped administration, workload-specific role management, and just-in-time access workflows.

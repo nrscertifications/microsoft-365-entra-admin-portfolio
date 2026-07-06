@@ -22,7 +22,7 @@ The goal of this project was to understand how the Microsoft 365 admin center, M
 * **User Lifecycle Administration:** Manual provisioning, bulk provisioning, profile properties, account state review, license review, and cross-portal verification
 * **External Collaboration:** B2B guest invitation workflow, external contacts, address book visibility concepts, and Outlook web access validation
 * **Group Administration:** Microsoft 365 groups, owners, members, group properties, Entra group validation, and dynamic membership exposure
-* **Role-Based Access & Delegated Administration:** Microsoft 365 and Entra role review, role assignments, administrative units, scoped delegation, Defender/Purview role groups, and PIM access review
+* **Role-Based Access & Delegated Administration:** Microsoft Entra role assignment, Microsoft 365 admin role management, administrative units, scoped User Administrator delegation, Purview role groups, Defender/Purview permission surfaces, and PIM eligible assignment workflows
 * **Operational Readiness:** Service health, network insights, software update visibility, and Microsoft 365 Backup readiness review
 * **Documentation & Version Control:** Markdown documentation, screenshot evidence mapping, Git/GitHub portfolio structure, and technical portfolio publishing
 
@@ -112,13 +112,13 @@ This track includes Microsoft Graph PowerShell module setup, delegated tenant au
 
 ### 9. Role-Based Access & Delegated Administration
 
-I reviewed administrative role management across Microsoft 365 admin center, Microsoft Entra admin center, Defender XDR, Microsoft Purview, administrative units, and Privileged Identity Management.
+I administered role-based access workflows across Microsoft 365 admin center, Microsoft Entra admin center, Defender XDR, Microsoft Purview, administrative units, and Privileged Identity Management concepts in a non-production tenant.
 
-This work focused on least-privilege awareness, role descriptions, role permissions, scoped delegation, role group membership, and temporary/eligible administrative access through PIM.
+This work covered hands-on role assignment, administrative unit creation, scoped User Administrator delegation, Purview role group workflows, and PIM-style eligible assignment configuration for temporary administrative access.
 
-![Microsoft 365 role assignment review](screenshots/10-role-based-access-delegation/12-m365-admin-center-role-assignment-complete.png)
+![Microsoft 365 role assignment completed](screenshots/10-role-based-access-delegation/12-m365-admin-center-role-assignment-complete.png)
 
-![Administrative unit scoped role confirmation](screenshots/10-role-based-access-delegation/22-administrative-unit-scoped-role-confirmation.png)
+![Administrative unit scoped role assignment confirmation](screenshots/10-role-based-access-delegation/22-administrative-unit-scoped-role-confirmation.png)
 
 ![PIM eligible assignment confirmation](screenshots/10-role-based-access-delegation/31-pim-eligible-assignment-confirmation.png)
 

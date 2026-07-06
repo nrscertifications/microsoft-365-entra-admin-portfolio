@@ -177,25 +177,26 @@ Evidence count: 26
 * `26-graph-user-review-and-cleanup-command.png`
 
 ## 10-role-based-access-delegation
+Administrative role assignment, scoped delegation, administrative unit membership, Purview role group administration, and PIM-style eligible access workflow evidence.
 Evidence count: 31
 * `01-entra-roles-and-administrators-overview.png`
-* `02-entra-role-description-review.png`
-* `03-entra-role-permissions-review.png`
-* `04-entra-role-settings-review.png`
-* `05-helpdesk-administrator-role-review.png`
-* `06-intune-administrator-role-review.png`
+* `02-entra-role-description-validation.png`
+* `03-entra-role-permissions-validation.png`
+* `04-entra-role-settings-validation.png`
+* `05-helpdesk-administrator-role-validation.png`
+* `06-intune-administrator-role-validation.png`
 * `07-entra-role-assignment-start.png`
 * `08-entra-role-assignment-member-selection.png`
 * `09-entra-role-assignment-success.png`
-* `10-m365-admin-center-role-overview.png`
+* `10-m365-admin-center-role-management-overview.png`
 * `11-m365-admin-center-assign-role.png`
 * `12-m365-admin-center-role-assignment-complete.png`
 * `13-exchange-admin-center-role-view.png`
 * `14-intune-admin-center-role-view.png`
-* `15-defender-xdr-permissions-review.png`
-* `16-defender-email-collaboration-role-review.png`
-* `17-purview-role-groups-review.png`
-* `18-purview-role-group-assignment-review.png`
+* `15-defender-xdr-permission-surface-validation.png`
+* `16-defender-email-collaboration-role-validation.png`
+* `17-purview-role-groups-management.png`
+* `18-purview-role-group-assignment-workflow.png`
 * `19-purview-role-group-assignment-confirmation.png`
 * `20-administrative-units-overview.png`
 * `21-administrative-unit-role-assignment-selection.png`
@@ -204,9 +205,9 @@ Evidence count: 31
 * `24-administrative-unit-entra-user-confirmation.png`
 * `25-administrative-unit-scope-check.png`
 * `26-administrative-unit-dynamic-membership-query.png`
-* `27-pim-overview.png`
-* `28-pim-eligible-roles-review.png`
-* `29-pim-managed-role-assignment-review.png`
+* `27-pim-access-management-overview.png`
+* `28-pim-eligible-roles-validation.png`
+* `29-pim-role-assignment-management.png`
 * `30-pim-eligible-assignment-configuration.png`
 * `31-pim-eligible-assignment-confirmation.png`
 
