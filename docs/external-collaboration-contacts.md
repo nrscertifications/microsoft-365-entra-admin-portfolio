@@ -12,10 +12,9 @@ This section documents the difference between contact-based communication object
 
 ## Work Completed
 
-* Reviewed CSV-based bulk contact upload requirements for external contact administration.
 * Created an external contact in the Microsoft 365 admin center.
 * Confirmed the external contact was added successfully.
-* Documented how external contacts support organization-wide address book visibility and communication workflows.
+* Reviewed the CSV-based bulk contact upload option as a related administration path for larger contact updates.
 * Initiated an external guest invitation through Microsoft Entra ID B2B collaboration.
 * Completed the guest invitation workflow, including guest profile details, invitation message, redirect URL handling, and review-before-invite validation.
 * Confirmed Outlook web navigation was available in the Microsoft 365 tenant as a service access check.
@@ -24,23 +23,23 @@ This section documents the difference between contact-based communication object
 
 ## Evidence Walkthrough
 
-### 1. Reviewed bulk contact upload requirements
-
-The bulk contact upload page was reviewed to understand how Microsoft 365 supports CSV-based external contact creation for larger address book updates.
-
-![Bulk contact CSV review](../screenshots/04-external-collaboration-contacts/01-bulk-contact-csv-review.png)
-
-### 2. Created an external contact in Microsoft 365 admin center
+### 1. Created an external contact in Microsoft 365 admin center
 
 An external contact was created through the Microsoft 365 admin center to demonstrate contact-based address book administration.
 
 ![External contact creation](../screenshots/04-external-collaboration-contacts/02-external-contact-create-01.png)
 
-### 3. Confirmed the external contact was added
+### 2. Confirmed the external contact was added
 
 The completed contact creation screen confirmed that the external contact object was added successfully.
 
 ![Contact added confirmation](../screenshots/04-external-collaboration-contacts/03-external-contact-create-02.png)
+
+### 3. Reviewed the bulk contact upload option
+
+After creating a single external contact, the CSV-based bulk contact upload option was reviewed as a related administration path for larger external address book updates.
+
+![Bulk contact CSV review](../screenshots/04-external-collaboration-contacts/01-bulk-contact-csv-review.png)
 
 ### 4. Started an external guest invitation in Microsoft Entra ID
 
@@ -95,5 +94,7 @@ This workflow is relevant to service desk and junior administrator scenarios whe
 External contacts and guest users were handled as separate Microsoft 365 / Entra ID object types.
 
 The external contact workflow demonstrated address book and communication visibility. The guest invitation workflow demonstrated the Microsoft Entra ID B2B collaboration path used for tenant-visible external identities.
+
+The CSV-based bulk contact upload option was reviewed as a related administration path for larger contact updates, not as the main workflow shown in this section.
 
 Outlook web navigation was checked as a service access validation step. Full Global Address List lookup validation, guest invitation acceptance, or end-user collaboration testing would require separate follow-up testing.
