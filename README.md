@@ -132,8 +132,7 @@ Evidence is organized by operational workstream:
 
 | Workstream | Evidence Folder | Documentation |
 |---|---|---|
-| Tenant Foundation | [`screenshots/01-tenant-foundation`](screenshots/01-tenant-foundation) | [`docs/tenant-foundation-domain-readiness.md`](docs/tenant-foundation-domain-readiness.md) |
-| Domain Readiness | [`screenshots/02-domain-readiness`](screenshots/02-domain-readiness) | [`docs/tenant-foundation-domain-readiness.md`](docs/tenant-foundation-domain-readiness.md) |
+| Tenant Foundation & Domain Readiness | [`screenshots/01-tenant-foundation`](screenshots/01-tenant-foundation)<br>[`screenshots/02-domain-readiness`](screenshots/02-domain-readiness) | [`docs/tenant-foundation-domain-readiness.md`](docs/tenant-foundation-domain-readiness.md) |
 | User Provisioning | [`screenshots/03-user-provisioning`](screenshots/03-user-provisioning) | [`docs/user-lifecycle-administration.md`](docs/user-lifecycle-administration.md) |
 | External Collaboration & Contacts | [`screenshots/04-external-collaboration-contacts`](screenshots/04-external-collaboration-contacts) | [`docs/external-collaboration-contacts.md`](docs/external-collaboration-contacts.md) |
 | Group Collaboration | [`screenshots/05-group-collaboration`](screenshots/05-group-collaboration) | [`docs/group-collaboration-management.md`](docs/group-collaboration-management.md) |
