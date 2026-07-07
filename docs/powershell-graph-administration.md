@@ -88,31 +88,31 @@ Variables and calculation output were practiced to build command-line familiarit
 
 The Microsoft Graph PowerShell module was installed and validated for tenant administration work.
 
-![Microsoft Graph module installation validation](../screenshots/09-powershell-admin-tooling/11-graph-module-installation-review-redacted.png)
+![Microsoft Graph module installation validation](../screenshots/09-powershell-admin-tooling/11-graph-module-installation-review.png)
 
 ### 9. Confirmed Microsoft Graph module installation
 
 The module installation completed successfully before connecting to the tenant.
 
-![Microsoft Graph module installation complete](../screenshots/09-powershell-admin-tooling/12-graph-module-installation-complete-redacted.png)
+![Microsoft Graph module installation complete](../screenshots/09-powershell-admin-tooling/12-graph-module-installation-complete.png)
 
 ### 10. Started Microsoft Graph tenant sign-in
 
 The tenant sign-in prompt was started for delegated Microsoft Graph authentication.
 
-![Microsoft Graph admin sign-in prompt](../screenshots/09-powershell-admin-tooling/13-graph-admin-sign-in-prompt-redacted.png)
+![Microsoft Graph admin sign-in prompt](../screenshots/09-powershell-admin-tooling/13-graph-admin-sign-in-prompt.png)
 
 ### 11. Confirmed successful Microsoft Graph sign-in
 
 Microsoft Graph authentication completed successfully, confirming the command-line session was connected to the tenant.
 
-![Microsoft Graph sign-in successful](../screenshots/09-powershell-admin-tooling/14-graph-sign-in-successful-redacted.png)
+![Microsoft Graph sign-in successful](../screenshots/09-powershell-admin-tooling/14-graph-sign-in-successful.png)
 
 ### 12. Retrieved tenant users through Microsoft Graph PowerShell
 
 Existing tenant users were retrieved through Microsoft Graph PowerShell to confirm read access and command output.
 
-![Microsoft Graph user list review](../screenshots/09-powershell-admin-tooling/15-graph-user-list-review-redacted.png)
+![Microsoft Graph user list review](../screenshots/09-powershell-admin-tooling/15-graph-user-list-review.png)
 
 ### 13. Created a test user through Microsoft Graph PowerShell
 
@@ -124,31 +124,31 @@ A test user was created from the command line using Microsoft Graph PowerShell. 
 
 The Graph-created user was verified from the Microsoft 365 admin center to confirm cross-portal validation.
 
-![Created user verified in Microsoft 365 admin center](../screenshots/09-powershell-admin-tooling/17-graph-created-user-admin-center-verification-redacted.png)
+![Created user verified in Microsoft 365 admin center](../screenshots/09-powershell-admin-tooling/17-graph-created-user-admin-center-verification.png)
 
 ### 15. Created a Microsoft 365 group through Microsoft Graph PowerShell
 
 A Microsoft 365 group was created using Microsoft Graph PowerShell to demonstrate command-line group administration.
 
-![Microsoft Graph create group command](../screenshots/09-powershell-admin-tooling/18-graph-create-group-command-redacted.png)
+![Microsoft Graph create group command](../screenshots/09-powershell-admin-tooling/18-graph-create-group-command.png)
 
 ### 16. Verified the Graph-created group in the admin portal
 
 The group created from PowerShell was verified in the Microsoft 365 admin portal.
 
-![Microsoft Graph group verified in admin portal](../screenshots/09-powershell-admin-tooling/19-graph-group-admin-center-verification-redacted.png)
+![Microsoft Graph group verified in admin portal](../screenshots/09-powershell-admin-tooling/19-graph-group-admin-center-verification.png)
 
 ### 17. Reviewed licensing and assigned a license through PowerShell
 
 Subscribed SKUs and consumed license units were reviewed, and a license assignment workflow was completed through PowerShell.
 
-![Microsoft Graph license review and assignment](../screenshots/09-powershell-admin-tooling/20-graph-license-review-assignment-redacted.png)
+![Microsoft Graph license review and assignment](../screenshots/09-powershell-admin-tooling/20-graph-license-review-assignment.png)
 
 ### 18. Prepared a CSV file for bulk user provisioning
 
 A CSV input file was prepared with user attributes for repeatable bulk provisioning.
 
-![CSV review for bulk user provisioning](../screenshots/09-powershell-admin-tooling/21-graph-bulk-user-csv-review-redacted.png)
+![CSV review for bulk user provisioning](../screenshots/09-powershell-admin-tooling/21-graph-bulk-user-csv-review.png)
 
 ### 19. Imported users from CSV through Microsoft Graph PowerShell
 
@@ -160,25 +160,25 @@ The CSV file was imported through PowerShell to create multiple users with consi
 
 Bulk-created users were verified in the Microsoft 365 admin center after the import completed.
 
-![Bulk-created users verified in admin portal](../screenshots/09-powershell-admin-tooling/23-graph-bulk-users-created-admin-center-verification-redacted.png)
+![Bulk-created users verified in admin portal](../screenshots/09-powershell-admin-tooling/23-graph-bulk-users-created-admin-center-verification.png)
 
 ### 21. Removed bulk-created test users through PowerShell
 
 The bulk-created test users were removed through PowerShell after validation to close the lab workflow cleanly.
 
-![CSV-based bulk user removal command](../screenshots/09-powershell-admin-tooling/24-graph-bulk-user-removal-command-redacted.png)
+![CSV-based bulk user removal command](../screenshots/09-powershell-admin-tooling/24-graph-bulk-user-removal-command.png)
 
 ### 22. Verified bulk-created users were removed
 
 The active user list was checked to confirm that bulk-created test accounts were removed after the cleanup workflow.
 
-![Bulk-created users removed after verification](../screenshots/09-powershell-admin-tooling/25-graph-bulk-users-removed-admin-center-verification-redacted.png)
+![Bulk-created users removed after verification](../screenshots/09-powershell-admin-tooling/25-graph-bulk-users-removed-admin-center-verification.png)
 
 ### 23. Reviewed final cleanup command output
 
 Final command output was reviewed after cleanup to confirm the PowerShell workflow ended cleanly.
 
-![Microsoft Graph user review and cleanup command](../screenshots/09-powershell-admin-tooling/26-graph-user-review-and-cleanup-command-redacted.png)
+![Microsoft Graph user review and cleanup command](../screenshots/09-powershell-admin-tooling/26-graph-user-review-and-cleanup-command.png)
 
 ---
 
