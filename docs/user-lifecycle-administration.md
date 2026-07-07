@@ -8,8 +8,8 @@ Provision and validate internal Microsoft 365 users using multiple administrativ
 
 * Created internal member users from the Microsoft 365 admin center.
 * Created users from Azure / Entra administration surfaces.
-* Reviewed account basics, profile details, password options, account enabled state, and user type.
-* Reviewed product license assignment options during account creation.
+* Validated account basics, profile details, password options, account enabled state, and user type.
+* Checked product license assignment options during account creation.
 * Verified user objects in active users and Entra user listings.
 * Completed a bulk user provisioning workflow using the Microsoft 365 admin center.
 
@@ -38,4 +38,4 @@ User lifecycle administration is a common service desk and IT support responsibi
 
 ## Outcome
 
-Internal users were created and verified across Microsoft 365 and Entra ID views. Bulk provisioning behavior was reviewed and documented with public-safe screenshot evidence.
+Internal users were created and verified across Microsoft 365 and Entra ID views. Bulk provisioning was completed and documented with public-safe screenshot evidence.

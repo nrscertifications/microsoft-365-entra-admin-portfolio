@@ -18,7 +18,7 @@ The work was completed in a non-production Microsoft 365 tenant using fictional 
 
 ## Scope of Work
 
-* Installed and reviewed Microsoft Graph PowerShell module usage.
+* Installed and validated Microsoft Graph PowerShell module usage.
 * Connected to the Microsoft 365 tenant using delegated Microsoft Graph permissions.
 * Reviewed existing tenant users from PowerShell.
 * Created a test user through Microsoft Graph PowerShell.
@@ -36,9 +36,9 @@ The work was completed in a non-production Microsoft 365 tenant using fictional 
 
 ### 1. Microsoft Graph PowerShell setup
 
-I reviewed the Microsoft Graph PowerShell module installation process and confirmed that the module was available for tenant administration work.
+I installed and validated the Microsoft Graph PowerShell module for tenant administration work.
 
-![Microsoft Graph module installation review](../screenshots/09-powershell-admin-tooling/11-graph-module-installation-review.png)
+![Microsoft Graph module installation validation](../screenshots/09-powershell-admin-tooling/11-graph-module-installation-review.png)
 
 ![Microsoft Graph module installation complete](../screenshots/09-powershell-admin-tooling/12-graph-module-installation-complete.png)
 

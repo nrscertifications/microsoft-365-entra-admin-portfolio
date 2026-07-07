@@ -29,8 +29,8 @@ Groups are central to collaboration, access, ownership, and communication workfl
 
 ![Group completed](../screenshots/05-group-collaboration/13-groups-add-365-group-completed08.png)
 
-![Entra group object review](../screenshots/05-group-collaboration/14-groups-add-entra-id-m365-group-properties-01.png)
+![Entra group object validation](../screenshots/05-group-collaboration/14-groups-add-entra-id-m365-group-properties-01.png)
 
 ## Outcome
 
-Microsoft 365 group configuration was created and validated through owners, members, group properties, and Entra-side object review. This supports practical collaboration and access troubleshooting scenarios.
+Microsoft 365 group configuration was created, configured, and validated through owners, members, group properties, and Entra-side object validation. This supports practical collaboration and access troubleshooting scenarios.
