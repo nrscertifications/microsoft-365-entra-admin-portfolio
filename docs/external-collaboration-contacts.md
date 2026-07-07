@@ -79,13 +79,7 @@ Support teams need to identify whether a request involves an external mail conta
 
 Treating these object types as the same can lead to incorrect troubleshooting around mailbox visibility, address book behavior, collaboration access, licensing assumptions, and account management.
 
-This workflow is relevant to service desk and junior administrator scenarios where users report issues such as:
-
-* Missing external contacts in the address book.
-* Confusion between contacts and guest users.
-* Guest invitation or collaboration access problems.
-* External users not appearing where staff expect them to appear.
-* Incorrect assumptions about whether an external person has a tenant identity.
+This workflow is relevant to service desk and junior administrator scenarios where users report issues such as missing external contacts, confusion between contacts and guest users, guest invitation problems, or external users not appearing where staff expect them to appear.
 
 ---
 
