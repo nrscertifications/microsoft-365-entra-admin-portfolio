@@ -92,23 +92,17 @@ The OneDrive backup policy workflow was continued as part of workload-level back
 
 ### 12. Configured SharePoint backup policy readiness
 
-The SharePoint backup policy workflow was worked through to validate SharePoint backup readiness administration.
+The SharePoint backup policy workflow was worked through and validated from the review-and-finish screen before policy creation.
 
-![SharePoint backup policy](../screenshots/08-operational-resilience-backup/07-sharepoint-backup-policy-01.png)
+![SharePoint backup policy review and finish](../screenshots/08-operational-resilience-backup/07-sharepoint-backup-policy-review-finish.png)
 
-### 13. Continued SharePoint backup policy configuration
-
-The SharePoint backup policy workflow was continued as part of Microsoft 365 Backup readiness validation.
-
-![SharePoint backup policy continuation](../screenshots/08-operational-resilience-backup/08-sharepoint-backup-policy-02.png)
-
-### 14. Confirmed backup policies completed
+### 13. Confirmed backup policies completed
 
 The backup policies completed screen confirmed that Exchange, OneDrive, and SharePoint backup readiness workflows were completed in the lab environment.
 
 ![All backup policies completed](../screenshots/08-operational-resilience-backup/03-all-backup-policies-completed.png)
 
-### 15. Reviewed billing connection flow for backup readiness
+### 14. Reviewed billing connection flow for backup readiness
 
 The pay-as-you-go billing connection flow was reviewed to understand prerequisite steps connected to Microsoft 365 Backup readiness.
 
