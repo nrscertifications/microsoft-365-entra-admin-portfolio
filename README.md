@@ -120,7 +120,7 @@ This work covered hands-on role assignment, administrative unit creation, scoped
 
 ![Microsoft 365 role assignment completed](screenshots/10-role-based-access-delegation/12-m365-admin-center-role-assignment-complete.png)
 
-![Administrative unit scoped role assignment confirmation](screenshots/10-role-based-access-delegation/22-administrative-unit-scoped-role-confirmation.png)
+![Administrative unit scoped User Administrator assignment](screenshots/10-role-based-access-delegation/25-administrative-unit-scope-check.png)
 
 ![PIM eligible assignment confirmation](screenshots/10-role-based-access-delegation/31-pim-eligible-assignment-confirmation.png)
 

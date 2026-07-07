@@ -21,7 +21,7 @@ The workflow focuses on how roles are selected, assigned, scoped, validated, and
 * Created administrative units to support scoped delegation.
 * Assigned a scoped User Administrator role through an administrative unit.
 * Added lab users to an administrative unit and verified membership through both Microsoft 365 admin center and Microsoft Entra admin center.
-* Confirmed administrative unit scope behavior, membership visibility, and dynamic membership query exposure.
+* Confirmed administrative unit scope behavior, membership visibility, and dynamic membership option exposure.
 * Worked through Privileged Identity Management views for eligible roles, active roles, pending requests, expired roles, approval views, and role assignment management.
 * Configured and validated a PIM-style eligible assignment workflow for temporary administrative access.
 
@@ -155,11 +155,11 @@ A scoped role assignment was selected through the administrative unit workflow.
 
 ![Administrative unit scoped role assignment selection](../screenshots/10-role-based-access-delegation/21-administrative-unit-role-assignment-selection.png)
 
-### 22. Confirmed scoped User Administrator assignment
+### 22. Confirmed administrative unit restricted management
 
-The scoped role assignment was confirmed, demonstrating User Administrator delegation limited to the administrative unit.
+The administrative unit list confirmed the New York administrative unit was created with restricted management enabled and assigned membership.
 
-![Administrative unit scoped role assignment confirmation](../screenshots/10-role-based-access-delegation/22-administrative-unit-scoped-role-confirmation.png)
+![Administrative unit restricted management confirmation](../screenshots/10-role-based-access-delegation/22-administrative-unit-restricted-management-confirmation.png)
 
 ### 23. Confirmed administrative unit membership
 
@@ -167,23 +167,23 @@ Administrative unit membership was confirmed after lab users were added to the u
 
 ![Administrative unit member confirmation](../screenshots/10-role-based-access-delegation/23-administrative-unit-member-confirmation.png)
 
-### 24. Verified administrative unit membership in Microsoft Entra
+### 24. Verified administrative unit visibility in Microsoft Entra admin center
 
-Administrative unit membership was verified from the Microsoft Entra user view.
+The administrative unit list was checked from the Microsoft Entra admin center to confirm the scoped administrative units were visible from the Entra role management surface.
 
-![Administrative unit user membership verified in Microsoft Entra](../screenshots/10-role-based-access-delegation/24-administrative-unit-entra-user-confirmation.png)
+![Administrative unit visibility in Microsoft Entra admin center](../screenshots/10-role-based-access-delegation/24-administrative-unit-entra-list-confirmation.png)
 
-### 25. Checked administrative unit scope behavior
+### 25. Confirmed scoped User Administrator assignment
 
-Administrative unit scope behavior was checked to understand how delegated administration is limited.
+The User Administrator assignment view confirmed that the delegated admin account was assigned with scope limited to the New York administrative unit.
 
-![Administrative unit scope validation](../screenshots/10-role-based-access-delegation/25-administrative-unit-scope-check.png)
+![Administrative unit scoped User Administrator assignment](../screenshots/10-role-based-access-delegation/25-administrative-unit-scope-check.png)
 
-### 26. Reviewed dynamic membership query exposure
+### 26. Reviewed dynamic membership options
 
-Dynamic membership query exposure was reviewed as a future-facing concept for administrative unit membership management.
+The administrative unit membership type options were checked to identify assigned membership, dynamic user membership, and dynamic device membership paths.
 
-![Administrative unit dynamic membership query exposure](../screenshots/10-role-based-access-delegation/26-administrative-unit-dynamic-membership-query.png)
+![Administrative unit dynamic membership options](../screenshots/10-role-based-access-delegation/26-administrative-unit-dynamic-membership-options.png)
 
 ### 27. Opened Privileged Identity Management access management
 

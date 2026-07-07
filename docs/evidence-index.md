@@ -135,8 +135,7 @@ Evidence count: 15
 * `04-backup-payg-setup-setup-page01.png`
 * `05-onedrive-backup-policy-01.png`
 * `06-onedrive-backup-policy-02.png`
-* `07-sharepoint-backup-policy-01.png`
-* `08-sharepoint-backup-policy-02.png`
+* `07-sharepoint-backup-policy-review-finish.png`
 * `09-backup-payg-policy-connect-billing-02.png`
 * `10-backup-payg-policy-connect-billing-03.png`
 * `11-backup-payg-policy-connect-billing-04.png`
