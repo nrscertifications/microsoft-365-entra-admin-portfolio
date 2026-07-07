@@ -200,11 +200,11 @@ Evidence count: 31
 * `19-purview-role-group-assignment-confirmation.png`
 * `20-administrative-units-overview.png`
 * `21-administrative-unit-role-assignment-selection.png`
-* `22-administrative-unit-scoped-role-confirmation.png`
+* `22-administrative-unit-restricted-management-confirmation.png`
 * `23-administrative-unit-member-confirmation.png`
-* `24-administrative-unit-entra-user-confirmation.png`
+* `24-administrative-unit-entra-list-confirmation.png`
 * `25-administrative-unit-scope-check.png`
-* `26-administrative-unit-dynamic-membership-query.png`
+* `26-administrative-unit-dynamic-membership-options.png`
 * `27-pim-access-management-overview.png`
 * `28-pim-eligible-roles-validation.png`
 * `29-pim-role-assignment-management.png`
