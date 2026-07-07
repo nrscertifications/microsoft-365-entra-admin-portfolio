@@ -4,7 +4,7 @@
 
 This repository documents a hands-on Microsoft 365 and Microsoft Entra ID administration environment focused on tenant readiness, identity administration, external collaboration, group management, licensing and service access, operational visibility, Microsoft 365 Backup readiness, Microsoft Graph PowerShell administration, role-based access, administrative units, scoped delegation, and PIM-style eligible access workflows.
 
-I configured the work in a dedicated non-production Microsoft 365 tenant using fictional users, test contacts, sample guest users, and lab-only objects. The repository is organized by administrative workflow instead of course section, so the evidence can be reviewed as a practical IT Support, Service Desk, Technical Support, or junior systems administration portfolio.
+I configured the work in a dedicated non-production Microsoft 365 tenant using fictional users, test contacts, sample guest users, and lab-only objects. The repository is organized by administrative workflow, so the evidence can be reviewed as a practical IT Support, Service Desk, Technical Support, or junior systems administration portfolio.
 
 The goal of this project was to understand how the Microsoft 365 admin center, Microsoft Entra admin center, Azure portal, Microsoft Graph PowerShell, and workload-specific admin centers connect across tenant setup, identity objects, licensing, collaboration, operational support views, backup readiness, command-line administration, delegated role assignment, scoped administration, and least-privilege access control.
 
