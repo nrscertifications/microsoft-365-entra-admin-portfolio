@@ -4,22 +4,29 @@ The screenshots in this repository use fictional lab users and test objects.
 
 ## Kept Visible
 
-* Fictional user names
-* Fictional group names
-* Lab tenant labels
-* Lab domain references used for workflow validation
-* Admin center and Entra ID interface screens
+* Fictional user names and lab email addresses
+* Fictional group and OU names
+* Lab tenant and domain labels used to verify the workflow
+* PowerShell commands and command output needed to support a technical claim
+* Configuration values that make the evidence understandable and do not grant access
 
-## Redacted
+## Removed or Cropped
 
-* Temporary passwords generated during bulk user creation
-* Tenant identifier values where the exact identifier was not useful for public review
-* Invitation redirect URL values containing tenant-specific identifiers
+* Temporary passwords and other credential values
+* Public IP information shown in Azure VM and RDP title bars
+* Tenant-specific redirect or identifier values when they do not help a reviewer understand the workflow
+* Surrounding browser or remote-session areas when a tighter crop improves focus and removes unrelated information
+
+Redaction and cropping are applied only to the specific sensitive or irrelevant area. They are not placed over adjacent labels, commands, results, or configuration evidence.
 
 ## Excluded From Public Evidence
 
-Tenant deletion screenshots were kept out of the public evidence path. They show valid lifecycle exposure, but they are not needed for the employer-facing story and can distract from the main administrative capabilities being demonstrated.
+* Tenant deletion screenshots
+* Screens showing public RDP exposure or credential prompts when they add no technical value
+* Empty or unrelated troubleshooting views
+* Repeated transition screens that make the repository harder to scan
 
 ## Reasoning
 
-Leaving fictional users visible makes the evidence easier to review and more human. Redacting passwords and unnecessary tenant identifiers keeps the portfolio professional and avoids normalizing credential exposure in public documentation.
+Leaving fictional identities visible makes the evidence easier to follow and avoids unnecessary blacked-out areas. Removing actual access information and low-value screens keeps the repository professional without weakening the proof of work.
+

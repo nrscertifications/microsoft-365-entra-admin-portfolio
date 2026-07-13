@@ -50,25 +50,25 @@ PowerShell command discovery was practiced to understand how cmdlets can be foun
 
 ### 2. Retrieved and formatted event log output
 
-Event log output was retrieved and formatted to practice reading administrative output in a structured format.
+Event log output was retrieved and formatted for structured review of administrative results.
 
 ![PowerShell event log formatted output](../screenshots/09-powershell-admin-tooling/03-powershell-get-eventlog-format-as-list.png)
 
 ### 3. Retrieved process information
 
-Process information was retrieved from PowerShell to practice basic system administration visibility.
+Process information was retrieved from PowerShell to review basic system activity.
 
 ![PowerShell Get-Process](../screenshots/09-powershell-admin-tooling/04-powershell-get-process.png)
 
 ### 4. Retrieved service information with parameters
 
-Service information was retrieved using PowerShell parameters to practice targeted system service review.
+Service information was retrieved with PowerShell parameters for a targeted system service review.
 
 ![PowerShell Get-Service with parameter](../screenshots/09-powershell-admin-tooling/05-powershell-get-service-with-parameter-with-service.png)
 
 ### 5. Exported process output to a file
 
-Process output was redirected to a file to practice command output handling and documentation-friendly evidence capture.
+Process output was redirected to a file to demonstrate command output handling and documentation-friendly evidence capture.
 
 ![PowerShell output process view to file](../screenshots/09-powershell-admin-tooling/06-powershell-output-process-view-processes-file.png)
 

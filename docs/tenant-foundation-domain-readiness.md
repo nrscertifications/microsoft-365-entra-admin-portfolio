@@ -35,7 +35,7 @@ Tenant setup details were configured as part of the initial Microsoft 365 enviro
 
 ### 3. Confirmed successful tenant creation
 
-The tenant creation workflow completed successfully, confirming the base environment was available for administration practice.
+The tenant creation workflow completed successfully, confirming the base environment was available for administration.
 
 ![Tenant creation success](../screenshots/01-tenant-foundation/03-tenant-create-successful-04.png)
 
