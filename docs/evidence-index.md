@@ -324,3 +324,51 @@ Evidence count: 11
 
 **Total Section 6 evidence published: 69 screenshots.**
 
+## 12-authentication-password-protection
+
+Authentication and password-security evidence is divided into smaller folders so the policy configuration and reporting state remain easy to scan.
+
+### 01-self-service-password-reset
+
+Evidence count: 7
+
+* `01-sspr-enabled-for-all-users.png`
+* `02-sspr-policy-save-confirmation.png`
+* `03-security-question-settings-and-retirement-notice.png`
+* `04-predefined-security-questions-selected.png`
+* `05-custom-security-question-added.png`
+* `06-security-question-selection-reviewed.png`
+* `07-security-question-policy-save-confirmation.png`
+
+### 02-authentication-methods-and-writeback
+
+Evidence count: 5
+
+* `01-sms-method-initially-disabled.png`
+* `02-sms-method-enabled-for-all-users.png`
+* `03-sms-method-policy-save-confirmation.png`
+* `04-password-writeback-options-selected.png`
+* `05-password-writeback-settings-saved-with-cloud-sync-agent-error.png`
+
+### 03-password-protection
+
+Evidence count: 7
+
+* `01-password-expiration-set-to-60-days.png`
+* `02-password-expiration-policy-save-confirmation.png`
+* `03-smart-lockout-threshold-set-to-10.png`
+* `04-smart-lockout-duration-set-to-60-seconds.png`
+* `05-custom-banned-password-list-enabled.png`
+* `06-on-premises-password-protection-audit-mode.png`
+* `07-password-protection-policy-save-confirmation.png`
+
+### 04-monitoring-and-reporting
+
+Evidence count: 4
+
+* `01-authentication-registration-capability-overview.png`
+* `02-users-registered-by-authentication-method.png`
+* `03-user-registration-details.png`
+* `04-registration-and-reset-events-review.png`
+
+**Total Section 7 evidence published: 23 screenshots.**

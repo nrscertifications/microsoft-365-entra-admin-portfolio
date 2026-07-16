@@ -2,13 +2,13 @@
 
 ## Project Overview
 
-This repository documents hands-on Microsoft 365, Microsoft Entra ID, Windows Server AD DS, and hybrid identity administration in a dedicated non-production environment. The work covers tenant and domain readiness, identity administration, external collaboration, group management, licensing and service access, operational visibility, Microsoft 365 Backup readiness, Microsoft Graph PowerShell, delegated administration, directory synchronization, and identity health monitoring.
+This repository documents hands-on Microsoft 365, Microsoft Entra ID, Windows Server AD DS, and hybrid identity administration in a dedicated non-production environment. The work covers tenant and domain readiness, identity administration, external collaboration, group management, licensing and service access, operational visibility, Microsoft 365 Backup readiness, Microsoft Graph PowerShell, delegated administration, directory synchronization, identity health monitoring, authentication methods, self-service password reset, and password protection.
 
 I configured the work in a dedicated non-production Microsoft 365 tenant using fictional users, test contacts, sample guest users, and lab-only objects. The repository is organized by administrative workflow, so the evidence can be reviewed as a practical IT Support, Service Desk, Technical Support, or junior systems administration portfolio.
 
-The project connects work across the Microsoft 365 admin center, Microsoft Entra admin center, Azure portal, Windows Server Active Directory Domain Services, Microsoft Graph PowerShell, Microsoft Entra Connect Sync, Microsoft Entra Cloud Sync, and workload-specific admin centers. The documentation shows what was configured, what was verified, and where a result remained a review or troubleshooting step rather than being presented as completed production work.
+The project connects work across the Microsoft 365 admin center, Microsoft Entra admin center, Azure portal, Windows Server Active Directory Domain Services, Microsoft Graph PowerShell, Microsoft Entra Connect Sync, Microsoft Entra Cloud Sync, Microsoft Entra authentication method policies, and workload-specific admin centers. The documentation shows what was configured, what was verified, and where a result remained a review or troubleshooting step rather than being presented as completed production work.
 
-> **Data and lab context note:** Screenshots use fictional users, test objects, and sample external collaboration targets created only for this Microsoft 365 / Entra ID environment. User names and lab email addresses remain visible when they help verify the workflow. Temporary passwords, public IP information, and values that could expose access were removed or cropped before publishing. No production customer data, private user records, or live business information are included.
+> **Data and lab context note:** Screenshots use fictional users, test objects, and sample external collaboration targets created only for this Microsoft 365 / Entra ID environment. User names and lab email addresses remain visible when they help verify the workflow. Temporary passwords and values that could expose access were removed or cropped before publishing. No production customer data, private user records, or live business information are included.
 
 ---
 
@@ -18,6 +18,7 @@ The project connects work across the Microsoft 365 admin center, Microsoft Entra
 * **Tenant & Domain Readiness:** Tenant overview validation, custom domain workflow review, primary domain awareness, and admin portal navigation.
 * **Microsoft Entra ID:** Member users, guest users, external collaboration, group objects, identity properties, administrative roles, administrative units, scoped delegation, synchronized identities, and portal validation.
 * **Hybrid Identity:** IDFix directory cleanup, Microsoft Entra Connect Sync, Microsoft Entra Cloud Sync, Password Hash Synchronization, OU and distinguished-name scoping, sync verification, and Connect Health troubleshooting.
+* **Authentication & Password Security:** Self-service password reset, authentication-method policies, SMS method targeting, password-writeback settings, tenant password-expiration review, smart lockout, custom banned passwords, Windows Server AD password-protection Audit mode, and registration reporting.
 * **Windows Server & Active Directory:** AD DS and DNS role installation, forest promotion, OU and user preparation, directory attribute review, and domain-controller validation.
 * **Azure Portal:** Virtual machine deployment, resource configuration, tenant and directory administration, and Log Analytics workspace exposure.
 * **Microsoft Graph PowerShell:** Module installation, delegated authentication, Graph scopes, user retrieval, test user creation, group creation, subscribed SKU review, license assignment, CSV-based bulk provisioning, and cleanup validation.
@@ -138,6 +139,21 @@ The work included synchronization scoping, Password Hash Synchronization, user v
 
 ![Connect Sync services, scheduler, and health connectivity verified](screenshots/11-hybrid-identity-synchronization/05-connect-health-troubleshooting/08-sync-services-scheduler-and-connectivity-verified.png)
 
+
+### 11. Authentication Methods, Password Reset & Password Protection
+
+I configured and reviewed Microsoft Entra authentication controls covering self-service password reset, authentication-method availability, password writeback settings, tenant password expiration, smart lockout, custom banned passwords, Windows Server Active Directory password protection, and registration reporting.
+
+The SSPR policy was enabled for all users. SMS was made available as an authentication method, but the evidence does not present that setting as MFA enforcement. Password writeback settings were saved while the Cloud Sync provisioning agent still showed an error, so the screenshots prove the tenant configuration rather than a successful end-to-end password-writeback test.
+
+The password-protection policy used a 10-attempt smart-lockout threshold, a 60-second lockout duration, a custom banned-password list, and Windows Server AD password protection in **Audit** mode. The monitoring views showed the tenant's actual capability and registration state rather than assuming that policy availability made every user registered or capable.
+
+![SSPR policy saved for all users](screenshots/12-authentication-password-protection/01-self-service-password-reset/02-sspr-policy-save-confirmation.png)
+
+![Password protection policy saved](screenshots/12-authentication-password-protection/03-password-protection/07-password-protection-policy-save-confirmation.png)
+
+![Authentication registration capability overview](screenshots/12-authentication-password-protection/04-monitoring-and-reporting/01-authentication-registration-capability-overview.png)
+
 ---
 
 ## Configuration Walkthrough & Evidence Map
@@ -156,6 +172,7 @@ Evidence is organized by operational workstream:
 | PowerShell Admin Tooling | [`screenshots/09-powershell-admin-tooling`](screenshots/09-powershell-admin-tooling) | [`docs/powershell-graph-administration.md`](docs/powershell-graph-administration.md) |
 | Role-Based Access & Delegation | [`screenshots/10-role-based-access-delegation`](screenshots/10-role-based-access-delegation) | [`docs/role-based-access-delegated-administration.md`](docs/role-based-access-delegated-administration.md) |
 | Hybrid Identity Synchronization | [`screenshots/11-hybrid-identity-synchronization`](screenshots/11-hybrid-identity-synchronization) | [`docs/hybrid-identity-synchronization.md`](docs/hybrid-identity-synchronization.md) |
+| Authentication Methods & Password Protection | [`screenshots/12-authentication-password-protection`](screenshots/12-authentication-password-protection) | [`docs/authentication-password-protection.md`](docs/authentication-password-protection.md) |
 
 > Screenshot note: The full screenshot archive supporting these workstreams is available in the [`screenshots/`](screenshots/) directory. The [`evidence index`](docs/evidence-index.md) lists every published file by workstream.
 
@@ -176,6 +193,9 @@ Evidence is organized by operational workstream:
 * Prepared Windows Server AD DS objects for synchronization and corrected an invalid UPN attribute with IDFix.
 * Configured and verified Microsoft Entra Connect Sync and Microsoft Entra Cloud Sync in separate lab forests.
 * Investigated Connect Health telemetry by checking services, the sync scheduler, outbound connectivity, and Cloud Sync audit results.
+* Configured self-service password reset scope and reviewed authentication methods used for password reset.
+* Configured SMS method availability, password-writeback settings, smart lockout, a custom banned-password list, and Windows Server AD password protection in Audit mode.
+* Reviewed authentication capability, registered-method, user-registration, and reset-event reporting without overstating the current user registration state.
 * Organized screenshots, evidence notes, and Markdown documentation into a structured public GitHub portfolio.
 
 ---

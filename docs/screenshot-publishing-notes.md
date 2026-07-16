@@ -1,32 +1,35 @@
 # Screenshot Publishing Notes
 
-The screenshots in this repository use fictional lab users and test objects.
+The screenshots in this repository use fictional lab users, test contacts, sample guest users, and lab-only configuration objects.
 
 ## Kept Visible
 
-* Fictional user names and lab email addresses
-* Fictional group and OU names
-* Lab tenant and domain labels used to verify the workflow
-* PowerShell commands and command output needed to support a technical claim
-* Configuration values that make the evidence understandable and do not grant access
+- Fictional user names and lab email addresses
+- Fictional group and organizational-unit names
+- Lab tenant and domain references
+- Administrative role names and policy settings
+- Authentication-method and password-protection configuration values
+- Weak example values used only to demonstrate the custom banned-password control
+- Portal warnings, error states, and incomplete conditions that are relevant to the workflow
+- Commands and results needed to understand the evidence
 
-## Removed or Cropped
+## Redacted or Excluded
 
-* Temporary passwords and other credential values
-* Public IP information shown in Azure VM and RDP title bars
-* Tenant-specific redirect or identifier values when they do not help a reviewer understand the workflow
-* Surrounding browser or remote-session areas when a tighter crop improves focus and removes unrelated information
+- Temporary passwords
+- Tokens, secrets, private keys, recovery codes, and connection strings
+- Real personal information
+- Values that could provide access to an active environment
+- Duplicate, transitional, or navigation-only screenshots that do not add distinct employer-facing evidence
+- Screens that could imply a completed result when no supporting outcome was captured
 
-Redaction and cropping are applied only to the specific sensitive or irrelevant area. They are not placed over adjacent labels, commands, results, or configuration evidence.
+## Authentication Evidence Notes
 
-## Excluded From Public Evidence
+Security questions remain visible because the portal itself shows the retirement notice and the screenshots document the control as a legacy setting. SMS policy screenshots show method availability and are not described as MFA enforcement.
 
-* Tenant deletion screenshots
-* Screens showing public RDP exposure or credential prompts when they add no technical value
-* Empty or unrelated troubleshooting views
-* Repeated transition screens that make the repository harder to scan
+Password-writeback screenshots show the tenant settings that were selected and saved. They are not presented as a successful end-to-end reset or writeback test.
+
+Windows Server Active Directory password protection is documented in **Audit** mode because that is the state shown in the evidence. The repository does not describe it as Enforced mode.
 
 ## Reasoning
 
-Leaving fictional identities visible makes the evidence easier to follow and avoids unnecessary blacked-out areas. Removing actual access information and low-value screens keeps the repository professional without weakening the proof of work.
-
+Leaving fictional users and useful configuration values visible makes the evidence easier to review. Redacting only genuine secrets avoids weakening the screenshots or covering the labels, commands, and results that an employer needs to understand the workflow.
