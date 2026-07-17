@@ -13,14 +13,14 @@ This work covers direct role assignments, workload-specific permission surfaces,
 
 ## Phase 1 — Microsoft Entra Role Assignment
 
-I reviewed the selected role permissions, assigned the lab user, and confirmed the completed Microsoft Entra role assignment.
+I reviewed Global Administrator permissions as part of the role comparison, then assigned Security Reader to the lab user and confirmed the completed assignment.
 
 <p align="center">
   <a href="../screenshots/10-role-based-access-delegation/03-entra-role-permissions-validation.png"><img src="../screenshots/10-role-based-access-delegation/03-entra-role-permissions-validation.png" alt="Entra role permissions" width="49%"></a>
   <a href="../screenshots/10-role-based-access-delegation/09-entra-role-assignment-success.png"><img src="../screenshots/10-role-based-access-delegation/09-entra-role-assignment-success.png" alt="Entra role assignment complete" width="49%"></a>
 </p>
 
-_Left: The permissions included with the selected administrative role. Right: The completed Microsoft Entra role assignment._
+_Left: Global Administrator permissions reviewed during role comparison. Right: The completed Security Reader assignment in Microsoft Entra._
 
 ## Phase 2 — Microsoft 365 and Workload Permission Surfaces
 
