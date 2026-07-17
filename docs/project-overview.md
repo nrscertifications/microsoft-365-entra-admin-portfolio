@@ -2,37 +2,35 @@
 
 This portfolio documents practical Microsoft 365, Microsoft Entra ID, Windows Server Active Directory, and hybrid identity administration performed in dedicated non-production lab environments.
 
-The repository is organized by operational workstream instead of course section. That structure makes the evidence easier for hiring managers, service desk leads, and technical reviewers to scan without needing context from the training material.
+The repository is organized by operational workstream rather than course section. Each document gives a concise summary of the work, groups related screenshots under clear headings, and keeps the detailed evidence available for employers who want to review the full workflow.
 
 ## Administrative Areas Covered
 
-- Tenant foundation and custom-domain readiness
-- Microsoft 365, Azure, and Microsoft Entra admin portal navigation
-- Internal user provisioning and cross-portal validation
-- Bulk user creation and post-provisioning verification
-- External contacts and Microsoft Entra B2B guest collaboration
-- Microsoft 365 group creation, ownership, and membership validation
-- Licensing and service-access review
-- Service health, network insights, software-update visibility, and backup readiness
-- Microsoft Graph PowerShell administration
-- Role-based access, administrative units, scoped delegation, Purview role groups, and PIM-style eligible access
-- Windows Server AD DS, IDFix, Microsoft Entra Connect Sync, Microsoft Entra Cloud Sync, and Connect Health
-- Self-service password reset, authentication-method policies, password writeback settings, smart lockout, banned-password controls, and authentication reporting
+* Tenant foundation and custom-domain readiness
+* Microsoft 365, Azure, and Microsoft Entra admin portal navigation
+* Internal user provisioning and cross-portal validation
+* CSV-based bulk user creation and verification
+* External contacts and Microsoft Entra B2B guest collaboration
+* Microsoft 365 group creation, ownership, and membership validation
+* Licensing and service-access review
+* Service health, network insights, software-update visibility, Log Analytics, and backup readiness
+* Microsoft Graph PowerShell administration
+* Role-based access, administrative units, scoped delegation, Purview role groups, and PIM-style eligible access
+* Windows Server AD DS, IDFix, Microsoft Entra Connect Sync, Microsoft Entra Cloud Sync, and Connect Health
+* Self-service password reset, authentication-method policies, password-writeback settings, smart lockout, banned-password controls, and authentication reporting
 
 ## Documentation Approach
 
 Each workstream records:
 
-1. What was configured or reviewed
-2. Why the setting matters in a support or administration workflow
-3. What the screenshots visibly verify
-4. What was not tested or completed
-5. Any error, warning, legacy control, or follow-up condition that remained visible
+1. The administrative objective
+2. The configuration, review, or troubleshooting work completed
+3. Related screenshots grouped by outcome
+4. The practical skills demonstrated
+5. The support or administration relevance
 
-The screenshots use fictional users and lab-only objects. Ordinary lab identities and configuration values remain visible when they help explain the workflow. Passwords, tokens, secrets, and genuinely sensitive access values are not published.
+The screenshots use fictional users and lab-only objects. Ordinary lab identities and configuration values remain visible when they help explain the workflow. Passwords, tokens, secrets, and access-enabling values are not published.
 
 ## Positioning
 
-This portfolio supports IT Support Technician, Service Desk Analyst, Help Desk Analyst, Technical Support Analyst, Desktop Support, junior systems support, and junior Microsoft 365 or systems administration roles.
-
-The work demonstrates practical configuration, cross-portal verification, authentication and access troubleshooting, evidence review, and technical documentation without presenting the lab as production ownership or senior architecture work.
+The portfolio is written for IT Support Technician, Service Desk Analyst, Help Desk Analyst, Technical Support Analyst, Desktop Support, junior systems support, and junior Microsoft 365 or systems administration roles.

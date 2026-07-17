@@ -2,124 +2,70 @@
 
 ## Administrative Objective
 
-Validate Microsoft 365 operational visibility and backup readiness areas that support troubleshooting, service awareness, monitoring exposure, and continuity planning.
-
-This document combines two related workstreams:
-
-* Service health, network insights, software update visibility, and Log Analytics exposure.
-* Microsoft 365 Backup readiness workflows for Exchange, OneDrive, and SharePoint.
-
----
+Review Microsoft 365 operational visibility and complete backup-readiness workflows used for service triage, network awareness, monitoring exposure, and data protection administration.
 
 ## Work Completed
 
-* Reviewed Microsoft 365 service health and operational insight areas for support triage awareness.
-* Configured and validated a network insights location entry.
-* Worked through Log Analytics workspace deployment, validation, and deletion screens as part of monitoring / software update visibility exposure.
-* Configured and validated Microsoft 365 Backup policy readiness workflows for Exchange, OneDrive, and SharePoint.
-* Reviewed the pay-as-you-go connection and billing connection flow as part of backup readiness awareness.
-* Documented the difference between visibility/review screens and hands-on backup readiness configuration steps.
-
----
+* Configured and reviewed a network insights location.
+* Reviewed software update and Log Analytics administration.
+* Deployed, validated, and reviewed cleanup for a Log Analytics workspace.
+* Completed Exchange, OneDrive, and SharePoint backup policy workflows.
+* Reviewed pay-as-you-go and billing connection steps for Microsoft 365 Backup.
 
 ## Evidence Walkthrough
 
-### 1. Configured and confirmed network insights location
+### Network insights and operational visibility
 
-A network insights location configuration was completed and confirmed to support Microsoft 365 network readiness awareness.
+I configured a network insights location and reviewed the area used to check Microsoft 365 network readiness.
 
 ![Network insights location configuration complete](../screenshots/07-service-health-network-insights/01-network-insights-location-complete.png)
 
-### 2. Reviewed network insights location view
-
-The network insights location view was reviewed to understand where network readiness information appears for support and administrator triage.
-
 ![Network insights location view](../screenshots/07-service-health-network-insights/02-network-insights-location.png)
 
-### 3. Checked software update / Log Analytics exposure
+### Log Analytics deployment and cleanup
 
-The Microsoft 365 admin center software update area was checked to understand Log Analytics exposure connected to monitoring and update visibility.
+I reviewed the software update connection to Log Analytics, deployed a workspace, confirmed validation, and reviewed the resource deletion workflow.
 
 ![Log Analytics software update exposure](../screenshots/07-service-health-network-insights/03-log-analytics-workspace-admincentre-software-updates-03.png)
 
-### 4. Deployed a Log Analytics workspace
-
-A Log Analytics workspace deployment screen was completed as part of exploring monitoring-related administrative exposure.
-
 ![Log Analytics workspace deployed](../screenshots/07-service-health-network-insights/05-log-analytics-workspace-deployed-04.png)
-
-### 5. Validated Log Analytics workspace deployment
-
-The workspace validation pass screen confirmed that the deployment workflow reached a successful validation state.
 
 ![Log Analytics workspace validation pass](../screenshots/07-service-health-network-insights/06-log-analytics-workspace-validationpass-02.png)
 
-### 6. Reviewed Log Analytics deletion workflow
-
-The deletion workflow was reviewed to understand cleanup and resource lifecycle behavior for monitoring-related Azure resources.
-
 ![Log Analytics workspace deletion workflow](../screenshots/07-service-health-network-insights/07-log-analytics-workspace-delete-azure-software-updates-006.png)
 
-### 7. Started Microsoft 365 Backup pay-as-you-go setup
+### Microsoft 365 Backup configuration
 
-The Microsoft 365 Backup pay-as-you-go setup page was reviewed as part of understanding backup readiness prerequisites.
+I reviewed the pay-as-you-go setup and completed workload-level backup policy workflows for Exchange, OneDrive, and SharePoint.
 
 ![Backup pay-as-you-go setup page](../screenshots/08-operational-resilience-backup/04-backup-payg-setup-setup-page01.png)
 
-### 8. Configured Exchange backup policy readiness
-
-The Exchange backup policy workflow was worked through as part of Microsoft 365 Backup readiness.
-
 ![Exchange backup policy](../screenshots/08-operational-resilience-backup/01-exchange-backup-policy-01.png)
-
-### 9. Continued Exchange backup policy configuration
-
-The Exchange backup policy workflow was continued to validate the workload-level backup policy path.
 
 ![Exchange backup policy continuation](../screenshots/08-operational-resilience-backup/02-exchange-backup-policy-02.png)
 
-### 10. Configured OneDrive backup policy readiness
-
-The OneDrive backup policy workflow was worked through to validate OneDrive backup readiness administration.
-
 ![OneDrive backup policy](../screenshots/08-operational-resilience-backup/05-onedrive-backup-policy-01.png)
-
-### 11. Continued OneDrive backup policy configuration
-
-The OneDrive backup policy workflow was continued as part of workload-level backup readiness validation.
 
 ![OneDrive backup policy continuation](../screenshots/08-operational-resilience-backup/06-onedrive-backup-policy-02.png)
 
-### 12. Configured SharePoint backup policy readiness
-
-The SharePoint backup policy workflow was worked through and validated from the review-and-finish screen before policy creation.
-
 ![SharePoint backup policy review and finish](../screenshots/08-operational-resilience-backup/07-sharepoint-backup-policy-review-finish.png)
-
-### 13. Confirmed backup policies completed
-
-The backup policies completed screen confirmed that Exchange, OneDrive, and SharePoint backup readiness workflows were completed in the lab environment.
 
 ![All backup policies completed](../screenshots/08-operational-resilience-backup/03-all-backup-policies-completed.png)
 
-### 14. Reviewed billing connection flow for backup readiness
-
-The pay-as-you-go billing connection flow was reviewed to understand prerequisite steps connected to Microsoft 365 Backup readiness.
-
 ![Backup pay-as-you-go billing connection flow](../screenshots/08-operational-resilience-backup/09-backup-payg-policy-connect-billing-02.png)
 
----
+## Skills Demonstrated
+
+* Microsoft 365 network insights configuration
+* Service and monitoring visibility review
+* Azure Log Analytics workspace deployment and cleanup
+* Microsoft 365 Backup policy administration
+* Exchange, OneDrive, and SharePoint backup readiness
 
 ## Support Relevance
 
-Support teams need to know when a reported user issue may be local, tenant-wide, service-side, network-related, monitoring-related, or tied to a backup/readiness gap.
-
-Service health and network insight views help prevent every incident from being treated as a workstation issue. Backup readiness awareness helps administrators understand where Exchange, OneDrive, and SharePoint protection workflows are checked.
-
----
+Service health, network insights, and monitoring views help separate local workstation problems from tenant, network, or service-level conditions. Backup administration adds the data-protection context needed when reviewing Exchange, OneDrive, and SharePoint readiness.
 
 ## Outcome
 
-Operational visibility areas were reviewed for service desk and administrator triage awareness.
-
-Microsoft 365 Backup readiness workflows were configured and validated for Exchange, OneDrive, and SharePoint in a non-production lab context. This strengthens the portfolio beyond user creation by showing awareness of service availability, network readiness, monitoring exposure, and data protection administration points.
+Operational visibility and monitoring areas were reviewed, and Microsoft 365 Backup policy workflows were completed for Exchange, OneDrive, and SharePoint.

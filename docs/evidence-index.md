@@ -322,7 +322,7 @@ Evidence count: 11
 * `10-cloud-sync-configuration-remained-healthy.png`
 * `11-cloud-sync-audit-log-success.png`
 
-**Total Section 6 evidence published: 69 screenshots.**
+Total Section 6 evidence published: 69 screenshots.
 
 ## 12-authentication-password-protection
 
@@ -371,4 +371,4 @@ Evidence count: 4
 * `03-user-registration-details.png`
 * `04-registration-and-reset-events-review.png`
 
-**Total Section 7 evidence published: 23 screenshots.**
+Total Section 7 evidence published: 23 screenshots.

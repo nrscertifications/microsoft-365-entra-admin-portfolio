@@ -2,93 +2,57 @@
 
 ## Administrative Objective
 
-Demonstrate how external contacts and guest users are handled differently in Microsoft 365 and Microsoft Entra ID administration.
-
-External contacts support address book visibility and communication workflows. Guest users are tenant-visible external identities used for collaboration scenarios after invitation.
-
-This section documents the difference between contact-based communication objects and guest identity objects so support staff can avoid treating them as the same type of account.
-
----
+Administer external contacts and Microsoft Entra B2B guest invitations as separate Microsoft 365 collaboration workflows.
 
 ## Work Completed
 
-* Created an external contact in the Microsoft 365 admin center.
-* Confirmed the external contact was added successfully.
-* Reviewed the CSV-based bulk contact upload option as a related administration path for larger contact updates.
-* Initiated an external guest invitation through Microsoft Entra ID B2B collaboration.
-* Completed the guest invitation workflow, including guest profile details, invitation message, redirect URL handling, and review-before-invite validation.
-* Confirmed Outlook web navigation was available in the Microsoft 365 tenant as a service access check.
-
----
+* Created and confirmed an external contact in Microsoft 365 admin center.
+* Reviewed the CSV-based bulk contact option.
+* Completed the Microsoft Entra guest invitation workflow with profile, message, redirect, and review settings.
+* Checked Outlook web navigation in the tenant.
 
 ## Evidence Walkthrough
 
-### 1. Created an external contact in Microsoft 365 admin center
+### External contact administration
 
-An external contact was created through the Microsoft 365 admin center to demonstrate contact-based address book administration.
+I created an external contact, confirmed the object was added, and reviewed the CSV-based option available for larger contact updates.
 
 ![External contact creation](../screenshots/04-external-collaboration-contacts/02-external-contact-create-01.png)
 
-### 2. Confirmed the external contact was added
-
-The completed contact creation screen confirmed that the external contact object was added successfully.
-
 ![Contact added confirmation](../screenshots/04-external-collaboration-contacts/03-external-contact-create-02.png)
-
-### 3. Reviewed the bulk contact upload option
-
-After creating a single external contact, the CSV-based bulk contact upload option was reviewed as a related administration path for larger external address book updates.
 
 ![Bulk contact CSV review](../screenshots/04-external-collaboration-contacts/01-bulk-contact-csv-review.png)
 
-### 4. Started an external guest invitation in Microsoft Entra ID
+### Microsoft Entra B2B guest invitation
 
-An external guest invitation workflow was initiated through Microsoft Entra ID B2B collaboration to demonstrate how guest identities are invited into a tenant.
+I completed the guest invitation workflow, including the guest profile, invitation details, message, redirect URL, and review-before-invite screen.
 
 ![External guest invitation basics](../screenshots/04-external-collaboration-contacts/04-external-guest-invitation-01.png)
 
-### 5. Entered guest user invitation details
-
-Guest profile and invitation details were entered as part of the external collaboration workflow.
-
 ![External guest invitation details](../screenshots/04-external-collaboration-contacts/05-external-guest-invitation-02.png)
-
-### 6. Configured invitation message and redirect URL options
-
-The guest invitation workflow included message and redirect URL options, which are important when controlling how invited users receive and access collaboration resources.
 
 ![External guest invitation message and redirect URL](../screenshots/04-external-collaboration-contacts/06-external-guest-invitation-03.png)
 
-### 7. Validated the review-before-invite step
-
-The invitation was reviewed before submission to confirm the guest details and invitation settings before completing the workflow.
-
 ![External guest invitation review-before-invite validation](../screenshots/04-external-collaboration-contacts/07-external-guest-invitation-04.png)
 
-### 8. Confirmed Outlook web navigation
+### Outlook web access check
 
-Outlook web navigation was checked as a tenant service access validation step after configuring external collaboration and contact-related objects.
+I confirmed Outlook web navigation was available in the tenant after the contact and guest workflows were reviewed.
 
 ![Outlook web navigation check](../screenshots/04-external-collaboration-contacts/08-outlook-navigation-check.png)
 
----
+## Skills Demonstrated
+
+* External contact creation
+* Bulk contact administration awareness
+* Microsoft Entra B2B guest invitation
+* Invitation message and redirect configuration
+* Contact and guest object distinction
 
 ## Support Relevance
 
-Support teams need to identify whether a request involves an external mail contact, an invited guest identity, or a standard internal user.
-
-Treating these object types as the same can lead to incorrect troubleshooting around mailbox visibility, address book behavior, collaboration access, licensing assumptions, and account management.
-
-This workflow is relevant to service desk and junior administrator scenarios where users report issues such as missing external contacts, confusion between contacts and guest users, guest invitation problems, or external users not appearing where staff expect them to appear.
-
----
+External contacts and guest identities are used for different purposes. This work shows the administration paths used when supporting address book visibility, guest invitations, and external collaboration access.
 
 ## Outcome
 
-External contacts and guest users were handled as separate Microsoft 365 / Entra ID object types.
-
-The external contact workflow demonstrated address book and communication visibility. The guest invitation workflow demonstrated the Microsoft Entra ID B2B collaboration path used for tenant-visible external identities.
-
-The CSV-based bulk contact upload option was reviewed as a related administration path for larger contact updates, not as the main workflow shown in this section.
-
-Outlook web navigation was checked as a service access validation step. Full Global Address List lookup validation, guest invitation acceptance, or end-user collaboration testing would require separate follow-up testing.
+The external contact and B2B guest invitation workflows were completed and documented as separate Microsoft 365 and Microsoft Entra object-management tasks.
