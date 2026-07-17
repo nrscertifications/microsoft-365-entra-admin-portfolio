@@ -1,71 +1,75 @@
-# Service Health, Network Insights & Backup Readiness
+# Operational Visibility & Backup Readiness
 
-## Administrative Objective
-
-Review Microsoft 365 operational visibility and complete backup-readiness workflows used for service triage, network awareness, monitoring exposure, and data protection administration.
+This work covers Microsoft 365 network insights, software-update reporting exposure, Azure Log Analytics administration, Microsoft 365 Backup policies, and pay-as-you-go billing connection.
 
 ## Work Completed
 
-* Configured and reviewed a network insights location.
-* Reviewed software update and Log Analytics administration.
-* Deployed, validated, and reviewed cleanup for a Log Analytics workspace.
-* Completed Exchange, OneDrive, and SharePoint backup policy workflows.
-* Reviewed pay-as-you-go and billing connection steps for Microsoft 365 Backup.
+- Added and reviewed a network insights location.
+- Opened the software-update reporting workflow connected to Log Analytics.
+- Deployed, validated, and removed a Log Analytics workspace.
+- Completed Exchange, OneDrive, and SharePoint backup policy workflows.
+- Connected Microsoft 365 Backup to the Azure pay-as-you-go billing policy.
 
-## Evidence Walkthrough
+## Phase 1 — Network Insights
 
-### Network insights and operational visibility
+I added an office location and confirmed it in the Microsoft 365 network connectivity view.
 
-I configured a network insights location and reviewed the area used to check Microsoft 365 network readiness.
+<p align="center">
+  <a href="../screenshots/07-service-health-network-insights/02-network-insights-location.png"><img src="../screenshots/07-service-health-network-insights/02-network-insights-location.png" alt="Network location settings" width="49%"></a>
+  <a href="../screenshots/07-service-health-network-insights/01-network-insights-location-complete.png"><img src="../screenshots/07-service-health-network-insights/01-network-insights-location-complete.png" alt="Network location confirmed" width="49%"></a>
+</p>
 
-![Network insights location configuration complete](../screenshots/07-service-health-network-insights/01-network-insights-location-complete.png)
+_Left: The office location and network details entered for the lab. Right: The completed New York location in the connectivity view._
 
-![Network insights location view](../screenshots/07-service-health-network-insights/02-network-insights-location.png)
+## Phase 2 — Software Update Reporting and Log Analytics
 
-### Log Analytics deployment and cleanup
+I opened the Windows Update for Business reporting setup, deployed the Log Analytics workspace, validated the resource, and completed the cleanup workflow after review.
 
-I reviewed the software update connection to Log Analytics, deployed a workspace, confirmed validation, and reviewed the resource deletion workflow.
+<p align="center">
+  <a href="../screenshots/07-service-health-network-insights/03-log-analytics-workspace-admincentre-software-updates-03.png"><img src="../screenshots/07-service-health-network-insights/03-log-analytics-workspace-admincentre-software-updates-03.png" alt="Software update reporting setup" width="49%"></a>
+  <a href="../screenshots/07-service-health-network-insights/05-log-analytics-workspace-deployed-04.png"><img src="../screenshots/07-service-health-network-insights/05-log-analytics-workspace-deployed-04.png" alt="Log Analytics workspace deployed" width="49%"></a>
+</p>
 
-![Log Analytics software update exposure](../screenshots/07-service-health-network-insights/03-log-analytics-workspace-admincentre-software-updates-03.png)
+_Left: The Windows Update for Business reporting connection to Log Analytics. Right: The completed Log Analytics workspace deployment._
+<p align="center">
+  <a href="../screenshots/07-service-health-network-insights/07-log-analytics-workspace-delete-azure-software-updates-006.png"><img src="../screenshots/07-service-health-network-insights/07-log-analytics-workspace-delete-azure-software-updates-006.png" alt="Log Analytics cleanup" width="78%"></a>
+</p>
 
-![Log Analytics workspace deployed](../screenshots/07-service-health-network-insights/05-log-analytics-workspace-deployed-04.png)
+_The Azure resource-group deletion workflow used for lab cleanup._
 
-![Log Analytics workspace validation pass](../screenshots/07-service-health-network-insights/06-log-analytics-workspace-validationpass-02.png)
+## Phase 3 — Microsoft 365 Backup Policies
 
-![Log Analytics workspace deletion workflow](../screenshots/07-service-health-network-insights/07-log-analytics-workspace-delete-azure-software-updates-006.png)
+I completed the Exchange, OneDrive, and SharePoint policy workflows and confirmed all three workloads in the backup-policy list.
 
-### Microsoft 365 Backup configuration
+<p align="center">
+  <a href="../screenshots/08-operational-resilience-backup/07-sharepoint-backup-policy-review-finish.png"><img src="../screenshots/08-operational-resilience-backup/07-sharepoint-backup-policy-review-finish.png" alt="SharePoint backup policy" width="49%"></a>
+  <a href="../screenshots/08-operational-resilience-backup/03-all-backup-policies-completed.png"><img src="../screenshots/08-operational-resilience-backup/03-all-backup-policies-completed.png" alt="Backup policies completed" width="49%"></a>
+</p>
 
-I reviewed the pay-as-you-go setup and completed workload-level backup policy workflows for Exchange, OneDrive, and SharePoint.
+_Left: The SharePoint backup policy review and creation screen. Right: Exchange, OneDrive, and SharePoint policies listed in the admin center._
 
-![Backup pay-as-you-go setup page](../screenshots/08-operational-resilience-backup/04-backup-payg-setup-setup-page01.png)
+## Phase 4 — Pay-As-You-Go Billing Connection
 
-![Exchange backup policy](../screenshots/08-operational-resilience-backup/01-exchange-backup-policy-01.png)
+I created the pay-as-you-go billing policy and connected Microsoft 365 Backup to the Azure billing account.
 
-![Exchange backup policy continuation](../screenshots/08-operational-resilience-backup/02-exchange-backup-policy-02.png)
+<p align="center">
+  <a href="../screenshots/08-operational-resilience-backup/13-backup-payg-policy-connect-billing-06.png"><img src="../screenshots/08-operational-resilience-backup/13-backup-payg-policy-connect-billing-06.png" alt="Pay-as-you-go policy created" width="49%"></a>
+  <a href="../screenshots/08-operational-resilience-backup/14-backup-payg-policy-connect-billing-07.png"><img src="../screenshots/08-operational-resilience-backup/14-backup-payg-policy-connect-billing-07.png" alt="Microsoft 365 Backup billing connection" width="49%"></a>
+</p>
 
-![OneDrive backup policy](../screenshots/08-operational-resilience-backup/05-onedrive-backup-policy-01.png)
-
-![OneDrive backup policy continuation](../screenshots/08-operational-resilience-backup/06-onedrive-backup-policy-02.png)
-
-![SharePoint backup policy review and finish](../screenshots/08-operational-resilience-backup/07-sharepoint-backup-policy-review-finish.png)
-
-![All backup policies completed](../screenshots/08-operational-resilience-backup/03-all-backup-policies-completed.png)
-
-![Backup pay-as-you-go billing connection flow](../screenshots/08-operational-resilience-backup/09-backup-payg-policy-connect-billing-02.png)
+_Left: The completed Azure pay-as-you-go billing policy. Right: Microsoft 365 Backup connected to the billing policy._
 
 ## Skills Demonstrated
 
-* Microsoft 365 network insights configuration
-* Service and monitoring visibility review
-* Azure Log Analytics workspace deployment and cleanup
-* Microsoft 365 Backup policy administration
-* Exchange, OneDrive, and SharePoint backup readiness
+- Microsoft 365 network insights configuration
+- Windows Update for Business reporting exposure
+- Azure Log Analytics workspace deployment and cleanup
+- Microsoft 365 Backup policy administration
+- Exchange, OneDrive, and SharePoint backup configuration
+- Pay-as-you-go billing connection
 
-## Support Relevance
+## Result
 
-Service health, network insights, and monitoring views help separate local workstation problems from tenant, network, or service-level conditions. Backup administration adds the data-protection context needed when reviewing Exchange, OneDrive, and SharePoint readiness.
+The network and reporting workflows were completed, and Microsoft 365 Backup was configured for Exchange, OneDrive, and SharePoint with the Azure billing connection in place.
 
-## Outcome
-
-Operational visibility and monitoring areas were reviewed, and Microsoft 365 Backup policy workflows were completed for Exchange, OneDrive, and SharePoint.
+The complete screenshot sequence is available in [`screenshots/07-service-health-network-insights`](../screenshots/07-service-health-network-insights) and [`screenshots/08-operational-resilience-backup`](../screenshots/08-operational-resilience-backup).

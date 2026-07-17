@@ -1,27 +1,23 @@
 # Screenshot Publishing Notes
 
-The screenshots in this repository use fictional lab users, test contacts, sample guest users, and lab-only configuration objects.
+The screenshots use fictional lab users, test contacts, sample guest accounts, and lab-only configuration objects.
 
 ## Kept Visible
 
-* Fictional user names and lab email addresses
-* Fictional group and organizational-unit names
-* Lab tenant and domain references
-* Administrative role names and policy settings
-* Authentication-method and password-protection configuration values
-* Weak example values used only for the custom banned-password control
-* Portal warnings and error states that are part of the documented troubleshooting workflow
-* Commands and results needed to understand the evidence
+- Fictional names and lab email addresses
+- Lab tenant and domain references
+- Group, OU, role, and policy names
+- Configuration values needed to understand the workflow
+- Commands and results that support the documented task
+- Warnings and error states that are part of a troubleshooting sequence
 
-## Redacted or Excluded
+## Redacted
 
-* Temporary passwords
-* Tokens, secrets, private keys, recovery codes, and connection strings
-* Real personal information
-* Values that could provide access to an active environment
-* Duplicate, transitional, or navigation-only screenshots that do not add useful evidence
-* Screenshots that do not support the documented workflow
+- Temporary passwords
+- Tokens, secrets, private keys, recovery codes, and connection strings
+- Real personal information
+- Values that could provide access to an active environment
 
-## Publishing Standard
+## Evidence Selection
 
-Fictional users and useful configuration values remain visible so the evidence is easy to follow. Redaction is limited to genuine secrets and access-enabling values, with care taken not to cover nearby labels, commands, or results.
+The complete screenshot archive is retained for reference. The detailed documents feature the images that best show configuration, verification, troubleshooting, or final state. Transitional and navigation-only screenshots may remain in the archive without being embedded in the employer-facing walkthroughs.

@@ -1,36 +1,31 @@
 # Project Overview
 
-This portfolio documents practical Microsoft 365, Microsoft Entra ID, Windows Server Active Directory, and hybrid identity administration performed in dedicated non-production lab environments.
+This portfolio documents practical Microsoft 365, Microsoft Entra ID, Windows Server Active Directory, and hybrid identity administration completed in non-production lab environments.
 
-The repository is organized by operational workstream rather than course section. Each document gives a concise summary of the work, groups related screenshots under clear headings, and keeps the detailed evidence available for employers who want to review the full workflow.
+## Portfolio Structure
+
+The repository uses two levels of documentation:
+
+- The main README provides a fast overview of the workstreams, skills, and selected evidence.
+- The detailed documents group related work into technical phases and place screenshots directly below the configuration or result they support.
+
+The full screenshot archive is preserved in the `screenshots/` directory and listed in the [evidence index](evidence-index.md).
 
 ## Administrative Areas Covered
 
-* Tenant foundation and custom-domain readiness
-* Microsoft 365, Azure, and Microsoft Entra admin portal navigation
-* Internal user provisioning and cross-portal validation
-* CSV-based bulk user creation and verification
-* External contacts and Microsoft Entra B2B guest collaboration
-* Microsoft 365 group creation, ownership, and membership validation
-* Licensing and service-access review
-* Service health, network insights, software-update visibility, Log Analytics, and backup readiness
-* Microsoft Graph PowerShell administration
-* Role-based access, administrative units, scoped delegation, Purview role groups, and PIM-style eligible access
-* Windows Server AD DS, IDFix, Microsoft Entra Connect Sync, Microsoft Entra Cloud Sync, and Connect Health
-* Self-service password reset, authentication-method policies, password-writeback settings, smart lockout, banned-password controls, and authentication reporting
+- Tenant creation, portal validation, and custom-domain verification
+- Internal user provisioning and CSV-based bulk account creation
+- External contacts and Microsoft Entra B2B guest invitations
+- Microsoft 365 groups, owners, members, and dynamic membership rules
+- License inventory and license assignment
+- Network insights, software-update reporting, Log Analytics, and Microsoft 365 Backup
+- Microsoft Graph PowerShell administration
+- Role assignments, Purview role groups, administrative units, scoped delegation, and eligible PIM assignments
+- Windows Server AD DS, IDFix, Microsoft Entra Connect Sync, Microsoft Entra Cloud Sync, and Connect Health
+- Self-service password reset, authentication methods, password-writeback settings, smart lockout, banned-password controls, and authentication reporting
 
-## Documentation Approach
+## Documentation Standard
 
-Each workstream records:
+The writing focuses on the work completed and the evidence shown. Screenshots are selected for configuration, verification, troubleshooting, or final-state value rather than for every navigation click.
 
-1. The administrative objective
-2. The configuration, review, or troubleshooting work completed
-3. Related screenshots grouped by outcome
-4. The practical skills demonstrated
-5. The support or administration relevance
-
-The screenshots use fictional users and lab-only objects. Ordinary lab identities and configuration values remain visible when they help explain the workflow. Passwords, tokens, secrets, and access-enabling values are not published.
-
-## Positioning
-
-The portfolio is written for IT Support Technician, Service Desk Analyst, Help Desk Analyst, Technical Support Analyst, Desktop Support, junior systems support, and junior Microsoft 365 or systems administration roles.
+Fictional lab identities and useful configuration values remain visible. Passwords, tokens, secrets, and access-enabling values are not published.

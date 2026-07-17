@@ -1,60 +1,63 @@
 # Group-Based Collaboration Management
 
-## Administrative Objective
-
-Create, configure, and validate a Microsoft 365 group across Microsoft 365 admin center and Microsoft Entra admin center.
+This work covers Microsoft 365 group creation, owner and member administration, Entra-side validation, and dynamic user and device membership rules.
 
 ## Work Completed
 
-* Created a Microsoft 365 group.
-* Configured group properties and collaboration options.
-* Added and validated members and owners.
-* Confirmed the completed group and reviewed its Entra-side object.
+- Created a Microsoft 365 group and configured its collaboration settings.
+- Added and verified group members and owners.
+- Reviewed the resulting group object in Microsoft Entra.
+- Configured dynamic membership logic for Windows devices and department or job-title based users.
+- Verified the resulting Sales group membership.
 
-## Evidence Walkthrough
+## Phase 1 — Microsoft 365 Group Creation
 
-### Group creation and configuration
+I defined the group, configured its collaboration settings, and completed the creation workflow.
 
-I started the group workflow, completed the setup screens, and reviewed the configured properties before finishing the creation process.
+<p align="center">
+  <a href="../screenshots/05-group-collaboration/02-groups-m365-group-create-02.png"><img src="../screenshots/05-group-collaboration/02-groups-m365-group-create-02.png" alt="Microsoft 365 group basics" width="49%"></a>
+  <a href="../screenshots/05-group-collaboration/07-groups-m365-group-create-07.png"><img src="../screenshots/05-group-collaboration/07-groups-m365-group-create-07.png" alt="Microsoft 365 group created" width="49%"></a>
+</p>
 
-![Microsoft 365 group creation start](../screenshots/05-group-collaboration/01-groups-m365-group-create-01.png)
+_Left: The Finance group name and description. Right: The Finance group creation confirmation._
 
-![Microsoft 365 group creation step](../screenshots/05-group-collaboration/02-groups-m365-group-create-02.png)
+## Phase 2 — Membership and Entra Validation
 
-![Microsoft 365 group creation options](../screenshots/05-group-collaboration/04-groups-m365-group-create-04.png)
+I confirmed the group membership and reviewed the resulting Microsoft 365 group object in Microsoft Entra.
 
-![Microsoft 365 group properties](../screenshots/05-group-collaboration/08-groups-add-365-group-properties-09.png)
+<p align="center">
+  <a href="../screenshots/05-group-collaboration/09-groups-add-365-group-members-011.png"><img src="../screenshots/05-group-collaboration/09-groups-add-365-group-members-011.png" alt="Group members" width="49%"></a>
+  <a href="../screenshots/05-group-collaboration/14-groups-add-entra-id-m365-group-properties-01.png"><img src="../screenshots/05-group-collaboration/14-groups-add-entra-id-m365-group-properties-01.png" alt="Entra group overview" width="49%"></a>
+</p>
 
-### Membership, ownership, and completion
+_Left: The Finance group member list. Right: The group object and collaboration-resource links in Entra._
 
-I added members and owners, verified each list, and confirmed the completed Microsoft 365 group.
+## Phase 3 — Dynamic Membership Rules
 
-![Group members validation](../screenshots/05-group-collaboration/09-groups-add-365-group-members-011.png)
+I configured a device rule for Windows devices whose display names begin with `NYC` and a user rule based on department and job-title values for sales and marketing.
 
-![Group owners validation](../screenshots/05-group-collaboration/10-groups-add-365-group-owners-010.png)
+<p align="center">
+  <a href="../screenshots/05-group-collaboration/19-groups-add-entra-id-m365-group-properties-014.png"><img src="../screenshots/05-group-collaboration/19-groups-add-entra-id-m365-group-properties-014.png" alt="Dynamic device rule" width="49%"></a>
+  <a href="../screenshots/05-group-collaboration/24-groups-add-entra-id-m365-group-properties-06.png"><img src="../screenshots/05-group-collaboration/24-groups-add-entra-id-m365-group-properties-06.png" alt="Dynamic user rule" width="49%"></a>
+</p>
 
-![Group creation completed](../screenshots/05-group-collaboration/13-groups-add-365-group-completed08.png)
+_Left: The rule targets Windows devices with display names beginning with NYC. Right: The rule evaluates department and job-title values for sales and marketing._
+<p align="center">
+  <a href="../screenshots/05-group-collaboration/27-groups-add-entra-id-m365-group-properties-09.png"><img src="../screenshots/05-group-collaboration/27-groups-add-entra-id-m365-group-properties-09.png" alt="Dynamic group members" width="78%"></a>
+</p>
 
-### Microsoft Entra group validation
-
-I reviewed the group object and its configuration from Microsoft Entra to confirm where the same group can be supported outside the Microsoft 365 admin center.
-
-![Entra group object validation](../screenshots/05-group-collaboration/14-groups-add-entra-id-m365-group-properties-01.png)
-
-![Entra group properties view](../screenshots/05-group-collaboration/20-groups-add-entra-id-m365-group-properties-02.png)
+_The members shown for the Sales group after the dynamic-user rule was configured._
 
 ## Skills Demonstrated
 
-* Microsoft 365 group creation
-* Group property configuration
-* Membership and ownership administration
-* Microsoft Entra group-object validation
-* Cross-portal group troubleshooting awareness
+- Microsoft 365 group creation and configuration
+- Group ownership and membership administration
+- Microsoft Entra group-object validation
+- Dynamic user and device membership rules
+- Cross-portal group administration
 
-## Support Relevance
+## Result
 
-Group properties, members, and owners affect collaboration and access across Microsoft 365. Reviewing the same object from both admin centers helps when troubleshooting membership, ownership, Teams, SharePoint, or distribution-related requests.
+The Microsoft 365 group was created and validated across both admin centers, and dynamic membership rules were configured for device and user-based group scenarios.
 
-## Outcome
-
-The Microsoft 365 group was created, configured, populated with members and owners, and verified from Microsoft Entra.
+The complete screenshot sequence is available in [`screenshots/05-group-collaboration`](../screenshots/05-group-collaboration).

@@ -1,45 +1,46 @@
 # Licensing & Service Access Review
 
-## Administrative Objective
-
-Review Microsoft 365 license inventory, assigned and available counts, and the admin center locations used to check service access.
+This work covers license inventory, user assignment, and the Microsoft 365 admin center views used to review product and service availability.
 
 ## Work Completed
 
-* Reviewed Microsoft 365 license inventory views.
-* Checked assigned and available license counts.
-* Reviewed marketplace and license-management navigation.
-* Connected licensing state to user service-access troubleshooting.
+- Reviewed available Microsoft 365 license products and assignment counts.
+- Assigned Microsoft 365 E5 to a lab user.
+- Confirmed the updated assigned count.
+- Reviewed product and service-plan comparison views.
 
-## Evidence Walkthrough
+## Phase 1 — License Inventory and Assignment
 
-### License inventory and availability
+I reviewed the available products, selected the lab user, completed the Microsoft 365 E5 assignment, and confirmed the assigned count increased from 1 of 25 to 2 of 25.
 
-I reviewed the license inventory and detail views used to check available products, assigned quantities, and remaining capacity.
+<p align="center">
+  <a href="../screenshots/06-licensing-service-access/03-license-inventory-review-03.png"><img src="../screenshots/06-licensing-service-access/03-license-inventory-review-03.png" alt="Assign license" width="49%"></a>
+  <a href="../screenshots/06-licensing-service-access/04-license-inventory-review-04.png"><img src="../screenshots/06-licensing-service-access/04-license-inventory-review-04.png" alt="License assignment confirmed" width="49%"></a>
+</p>
 
-![License inventory review](../screenshots/06-licensing-service-access/01-license-inventory-review-01.png)
+_Left: The Microsoft 365 E5 assignment panel with the lab user selected. Right: The successful assignment notification and updated license count._
 
-![License inventory details](../screenshots/06-licensing-service-access/03-license-inventory-review-03.png)
+## Phase 2 — Product and Service-Plan Review
 
-### License and marketplace navigation
+I used the marketplace comparison views to review Microsoft 365 products and their included services.
 
-I reviewed the additional license and marketplace pages available from the Microsoft 365 admin center.
+<p align="center">
+  <a href="../screenshots/06-licensing-service-access/05-license-inventory-review-05-marketplace-navigation-comparison-2.png"><img src="../screenshots/06-licensing-service-access/05-license-inventory-review-05-marketplace-navigation-comparison-2.png" alt="Product comparison" width="49%"></a>
+  <a href="../screenshots/06-licensing-service-access/06-license-inventory-review-05-marketplace-navigation-comparison-3.png"><img src="../screenshots/06-licensing-service-access/06-license-inventory-review-05-marketplace-navigation-comparison-3.png" alt="Service-plan comparison" width="49%"></a>
+</p>
 
-![License marketplace navigation](../screenshots/06-licensing-service-access/05-license-inventory-review-05-marketplace-navigation-comparison-2.png)
-
-![Additional licensing navigation view](../screenshots/06-licensing-service-access/07-license-inventory-review-05-marketplace-navigation-1.png)
+_Left: The marketplace comparison view for Microsoft 365 products. Right: The included service plans shown across the selected products._
 
 ## Skills Demonstrated
 
-* Microsoft 365 license inventory review
-* Assigned and available license-count checks
-* License-management portal navigation
-* Service-access troubleshooting awareness
+- Microsoft 365 license inventory review
+- User license assignment
+- Assigned and available count validation
+- Product and service-plan comparison
+- License-management portal navigation
 
-## Support Relevance
+## Result
 
-A user account can exist while the required Microsoft 365 service remains unavailable because of licensing or service-plan configuration. License review is a common check for mailbox, Teams, Office app, SharePoint, and OneDrive access issues.
+Microsoft 365 E5 was assigned to the lab user and the updated assignment count was confirmed in the admin center.
 
-## Outcome
-
-Microsoft 365 licensing was reviewed as part of account readiness and service-access administration.
+The complete screenshot sequence is available in [`screenshots/06-licensing-service-access`](../screenshots/06-licensing-service-access).

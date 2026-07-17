@@ -1,66 +1,57 @@
 # User Lifecycle Administration
 
-## Administrative Objective
-
-Provision and validate internal Microsoft 365 users through multiple administrative portals and a CSV-based bulk user workflow.
+This work covers individual user creation through Microsoft 365 and Microsoft Entra, cross-portal validation, and CSV-based bulk provisioning.
 
 ## Work Completed
 
-* Created internal member users from Microsoft 365 and Entra administration surfaces.
-* Reviewed account basics, profile details, password options, account state, user type, and license options.
-* Verified created user objects across Microsoft 365, Azure, and Microsoft Entra views.
-* Completed and verified CSV-based bulk user provisioning.
-* Redacted temporary password output before publishing.
+- Created internal member users through Microsoft 365 and Microsoft Entra.
+- Reviewed account basics, profile details, password options, account state, user type, and licensing options.
+- Verified created identities across the administrative portals.
+- Completed a CSV-based bulk user workflow and protected temporary password output before publishing.
 
-## Evidence Walkthrough
+## Phase 1 — Microsoft 365 User Creation
 
-### Microsoft 365 user creation and cross-portal verification
+I configured the account details in the Microsoft 365 admin center and confirmed the completed user in Microsoft Entra.
 
-I created an internal user through the Microsoft 365 admin center, reviewed license options, completed the account workflow, and verified the same identity from Azure and Microsoft Entra administration views.
+<p align="center">
+  <a href="../screenshots/03-user-provisioning/19-m365-admin-user-create-01.png"><img src="../screenshots/03-user-provisioning/19-m365-admin-user-create-01.png" alt="Microsoft 365 user basics" width="49%"></a>
+  <a href="../screenshots/03-user-provisioning/16-m365-admin-user-create-entra-id-portal-confirmation-07.png"><img src="../screenshots/03-user-provisioning/16-m365-admin-user-create-entra-id-portal-confirmation-07.png" alt="User visible in Entra" width="49%"></a>
+</p>
 
-![Microsoft 365 user creation basics](../screenshots/03-user-provisioning/19-m365-admin-user-create-01.png)
+_Left: Account name, username, domain, and password options. Right: The created account listed in Microsoft Entra._
 
-![License assignment options during user creation](../screenshots/03-user-provisioning/20-m365-admin-user-create-02.png)
+## Phase 2 — Microsoft Entra User Creation
 
-![User creation confirmation](../screenshots/03-user-provisioning/17-m365-admin-user-create-successful-creation-05.png)
+I completed a second user workflow from Microsoft Entra, including identity, profile, and account-state settings, then verified the new account.
 
-![User visible in Azure portal user view](../screenshots/03-user-provisioning/15-m365-admin-user-create-azure-portal-confirmation-07.png)
+<p align="center">
+  <a href="../screenshots/03-user-provisioning/27-entra-admin-user-create-01.png"><img src="../screenshots/03-user-provisioning/27-entra-admin-user-create-01.png" alt="Entra user identity settings" width="49%"></a>
+  <a href="../screenshots/03-user-provisioning/30-entra-admin-user-create-04.png"><img src="../screenshots/03-user-provisioning/30-entra-admin-user-create-04.png" alt="Entra user verification" width="49%"></a>
+</p>
 
-![User visible in Entra admin center](../screenshots/03-user-provisioning/16-m365-admin-user-create-entra-id-portal-confirmation-07.png)
+_Left: Identity, username, password, and account-state controls. Right: The new account visible in the Entra users list._
 
-### Azure and Entra user creation
+## Phase 3 — CSV-Based Bulk Provisioning
 
-I also completed the user creation workflow from the Azure and Entra administration surface and confirmed the account was created successfully.
+I prepared structured user data, completed the bulk-user workflow, and verified the newly created accounts. Temporary passwords were redacted from the completion screen.
 
-![Azure portal user creation start](../screenshots/03-user-provisioning/24-azure-portal-user-create-01.png)
+<p align="center">
+  <a href="../screenshots/03-user-provisioning/03-bulk-user-provisioning-03.png"><img src="../screenshots/03-user-provisioning/03-bulk-user-provisioning-03.png" alt="Bulk user CSV" width="49%"></a>
+  <a href="../screenshots/03-user-provisioning/13-bulk-user-provisioning-completed-redacted-passwords.png"><img src="../screenshots/03-user-provisioning/13-bulk-user-provisioning-completed-redacted-passwords.png" alt="Bulk provisioning completed" width="49%"></a>
+</p>
 
-![Azure portal user creation completed](../screenshots/03-user-provisioning/23-azure-portal-user-create-successful-creation-05.png)
-
-### CSV-based bulk provisioning
-
-I used the Microsoft 365 bulk user workflow to create multiple accounts from structured input, handled the generated temporary password output as sensitive, and verified the new users in the active users list.
-
-![Bulk user provisioning start](../screenshots/03-user-provisioning/01-bulk-user-provisioning-01.png)
-
-![Bulk user provisioning setup](../screenshots/03-user-provisioning/05-bulk-user-provisioning-05.png)
-
-![Bulk user provisioning completed with temporary passwords redacted](../screenshots/03-user-provisioning/13-bulk-user-provisioning-completed-redacted-passwords.png)
-
-![Bulk user provisioning admin center verification](../screenshots/03-user-provisioning/14-bulk-user-provisioning-13-admin-center-verification.png)
+_Left: The CSV input containing the lab user records. Right: Five users were added and temporary passwords were redacted._
 
 ## Skills Demonstrated
 
-* Microsoft 365 and Entra user provisioning
-* User property and account-state review
-* License-option review during account creation
-* Cross-portal identity verification
-* CSV-based bulk user creation
-* Secure handling of temporary credentials
+- Microsoft 365 and Microsoft Entra user provisioning
+- User profile and account-state configuration
+- Cross-portal identity verification
+- CSV-based bulk user creation
+- Secure handling of temporary credentials
 
-## Support Relevance
+## Result
 
-User creation affects sign-in, email, licensing, groups, and downstream access. Verifying the identity across portals helps confirm that the account exists and is available for the next administration step.
+Internal users were created and verified through both administration surfaces, and the bulk workflow created five additional lab accounts from structured input.
 
-## Outcome
-
-Internal users were created and verified through Microsoft 365, Azure, and Microsoft Entra administration workflows. The bulk provisioning process was completed and validated with temporary credentials protected in the published evidence.
+The complete screenshot sequence is available in [`screenshots/03-user-provisioning`](../screenshots/03-user-provisioning).
