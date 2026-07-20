@@ -1,7 +1,5 @@
 # Screenshot Evidence
 
-Screenshots are organized by administrative workstream.
+Screenshots are organized by administration workstream rather than by course section.
 
-The detailed documents use selected images in phase order so the workflow remains easy to scan. The full screenshot sequence is retained in this directory and listed in [`docs/evidence-index.md`](../docs/evidence-index.md).
-
-The screenshots use fictional lab identities and test objects. Temporary passwords, secrets, and access-enabling values are not published.
+The screenshots use fictional lab users and test objects. Fake names remain visible when they make the workflow evidence understandable. Temporary passwords, secrets, public IP information, and access-enabling values are removed or cropped before publishing.

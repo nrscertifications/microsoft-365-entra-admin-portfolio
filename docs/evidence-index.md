@@ -396,3 +396,30 @@ Evidence count: 4
 - [`04-registration-and-reset-events-review.png`](../screenshots/12-authentication-password-protection/04-monitoring-and-reporting/04-registration-and-reset-events-review.png)
 
 </details>
+
+## 13-secure-access-conditional-access
+
+Evidence count: 22
+
+- `01-security-defaults-management-navigation.png`
+- `02-security-defaults-disabled.png`
+- `03-conditional-access-policy-workspace.png`
+- `04-user-risk-medium-high-selected.png`
+- `05-sign-in-risk-medium-high-selected.png`
+- `06-all-users-assignment-selected.png`
+- `07-require-mfa-grant-control.png`
+- `08-risk-policy-review-and-create.png`
+- `09-risk-policy-created-confirmation.png`
+- `10-risky-users-report-reviewed.png`
+- `11-private-browser-sign-in-test.png`
+- `12-sign-in-logs-reviewed.png`
+- `13-break-glass-user-exclusion.png`
+- `14-all-users-policy-assignment.png`
+- `15-target-resources-selected.png`
+- `16-client-app-conditions-selected.png`
+- `17-device-platform-conditions-selected.png`
+- `18-mfa-grant-control-selected.png`
+- `19-policy-state-enabled.png`
+- `20-require-mfa-policy-review.png`
+- `21-user-risk-condition-review.png`
+- `22-require-mfa-policy-created.png`

@@ -22,6 +22,7 @@ The main page provides a fast view of the workstreams and skills. Each detailed 
 | Role-Based Access & Delegation | Completed role assignments, administered Purview role groups, configured administrative-unit scope, and created an eligible PIM assignment. | [View workstream](docs/role-based-access-delegated-administration.md) |
 | Hybrid Identity | Configured Microsoft Entra Connect Sync and Cloud Sync in separate lab forests, verified synchronized identities, and investigated Connect Health telemetry. | [View workstream](docs/hybrid-identity-synchronization.md) |
 | Authentication & Password Security | Configured SSPR, authentication methods, password writeback, smart lockout, banned passwords, Windows Server AD password protection, and registration reporting. | [View workstream](docs/authentication-password-protection.md) |
+| Secure Access & Conditional Access | Disabled Security Defaults, created risk-based and scoped MFA policies, configured emergency-access exclusion, and reviewed risk and sign-in reporting. | [View workstream](docs/secure-access-conditional-access.md) |
 
 ---
 
@@ -32,6 +33,7 @@ The main page provides a fast view of the workstreams and skills. Each detailed 
 - **Microsoft Entra ID:** Member and guest users, group objects, dynamic membership rules, administrative roles, administrative units, scoped delegation, synchronized identities, and authentication reporting.
 - **Hybrid Identity:** IDFix remediation, Microsoft Entra Connect Sync, Microsoft Entra Cloud Sync, Password Hash Synchronization, OU and distinguished-name scoping, synchronized identity verification, and Connect Health troubleshooting.
 - **Authentication & Password Security:** Self-service password reset, security-question controls, SMS method targeting, password-writeback settings, password expiration, smart lockout, custom banned passwords, Windows Server AD password protection in Audit mode, and registration reporting.
+- **Secure Access & Conditional Access:** Security Defaults transition, user-risk and sign-in-risk conditions, MFA grant controls, emergency-access exclusions, target-resource scoping, client-app and device-platform conditions, policy state management, risky-user reporting, and sign-in log review.
 - **Windows Server & Active Directory:** AD DS and DNS installation, forest promotion, OU and user preparation, directory attribute review, domain-controller validation, and synchronization scope preparation.
 - **Azure Portal:** Virtual machine deployment, resource configuration, tenant and directory administration, and Log Analytics workspace deployment and cleanup.
 - **Microsoft Graph PowerShell:** Module installation, delegated authentication, user retrieval and creation, group creation, subscribed SKU review, license assignment, CSV-based bulk provisioning, verification, and cleanup.
@@ -72,6 +74,15 @@ _Left: Microsoft Graph PowerShell created users from CSV input with the password
 </p>
 
 _Left: The Cloud Sync configuration is enabled with a healthy provisioning agent. Right: Smart lockout, custom banned passwords, and Audit mode settings are saved._
+
+### Risk-based secure access
+
+<p align="center">
+  <a href="screenshots/13-secure-access-conditional-access/09-risk-policy-created-confirmation.png"><img src="screenshots/13-secure-access-conditional-access/09-risk-policy-created-confirmation.png" alt="Risk-based Conditional Access policy created" width="49%"></a>
+  <a href="screenshots/13-secure-access-conditional-access/22-require-mfa-policy-created.png"><img src="screenshots/13-secure-access-conditional-access/22-require-mfa-policy-created.png" alt="Scoped MFA Conditional Access policy created" width="49%"></a>
+</p>
+
+_Left: A risk-based MFA policy is enabled after configuring medium and high user and sign-in risk. Right: A second user-created MFA policy is successfully created with scoped conditions and an emergency-access exclusion._
 
 ---
 
