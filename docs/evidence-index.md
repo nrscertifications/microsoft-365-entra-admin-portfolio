@@ -397,29 +397,32 @@ Evidence count: 4
 
 </details>
 
-## 13-secure-access-conditional-access
+<details>
+<summary>13-secure-access-conditional-access — 22 screenshots</summary>
 
 Evidence count: 22
 
-- `01-security-defaults-management-navigation.png`
-- `02-security-defaults-disabled.png`
-- `03-conditional-access-policy-workspace.png`
-- `04-user-risk-medium-high-selected.png`
-- `05-sign-in-risk-medium-high-selected.png`
-- `06-all-users-assignment-selected.png`
-- `07-require-mfa-grant-control.png`
-- `08-risk-policy-review-and-create.png`
-- `09-risk-policy-created-confirmation.png`
-- `10-risky-users-report-reviewed.png`
-- `11-private-browser-sign-in-test.png`
-- `12-sign-in-logs-reviewed.png`
-- `13-break-glass-user-exclusion.png`
-- `14-all-users-policy-assignment.png`
-- `15-target-resources-selected.png`
-- `16-client-app-conditions-selected.png`
-- `17-device-platform-conditions-selected.png`
-- `18-mfa-grant-control-selected.png`
-- `19-policy-state-enabled.png`
-- `20-require-mfa-policy-review.png`
-- `21-user-risk-condition-review.png`
-- `22-require-mfa-policy-created.png`
+- [`01-security-defaults-management-navigation.png`](../screenshots/13-secure-access-conditional-access/01-security-defaults-management-navigation.png)
+- [`02-security-defaults-disabled.png`](../screenshots/13-secure-access-conditional-access/02-security-defaults-disabled.png)
+- [`03-conditional-access-policy-workspace.png`](../screenshots/13-secure-access-conditional-access/03-conditional-access-policy-workspace.png)
+- [`04-user-risk-medium-high-selected.png`](../screenshots/13-secure-access-conditional-access/04-user-risk-medium-high-selected.png)
+- [`05-sign-in-risk-medium-high-selected.png`](../screenshots/13-secure-access-conditional-access/05-sign-in-risk-medium-high-selected.png)
+- [`06-all-users-assignment-selected.png`](../screenshots/13-secure-access-conditional-access/06-all-users-assignment-selected.png)
+- [`07-require-mfa-grant-control.png`](../screenshots/13-secure-access-conditional-access/07-require-mfa-grant-control.png)
+- [`08-risk-policy-review-and-create.png`](../screenshots/13-secure-access-conditional-access/08-risk-policy-review-and-create.png)
+- [`09-risk-policy-created-confirmation.png`](../screenshots/13-secure-access-conditional-access/09-risk-policy-created-confirmation.png)
+- [`10-risky-users-report-reviewed.png`](../screenshots/13-secure-access-conditional-access/10-risky-users-report-reviewed.png)
+- [`11-private-browser-sign-in-test.png`](../screenshots/13-secure-access-conditional-access/11-private-browser-sign-in-test.png)
+- [`12-sign-in-logs-reviewed.png`](../screenshots/13-secure-access-conditional-access/12-sign-in-logs-reviewed.png)
+- [`13-break-glass-user-exclusion.png`](../screenshots/13-secure-access-conditional-access/13-break-glass-user-exclusion.png)
+- [`14-all-users-policy-assignment.png`](../screenshots/13-secure-access-conditional-access/14-all-users-policy-assignment.png)
+- [`15-target-resources-selected.png`](../screenshots/13-secure-access-conditional-access/15-target-resources-selected.png)
+- [`16-client-app-conditions-selected.png`](../screenshots/13-secure-access-conditional-access/16-client-app-conditions-selected.png)
+- [`17-device-platform-conditions-selected.png`](../screenshots/13-secure-access-conditional-access/17-device-platform-conditions-selected.png)
+- [`18-mfa-grant-control-selected.png`](../screenshots/13-secure-access-conditional-access/18-mfa-grant-control-selected.png)
+- [`19-policy-state-enabled.png`](../screenshots/13-secure-access-conditional-access/19-policy-state-enabled.png)
+- [`20-require-mfa-policy-review.png`](../screenshots/13-secure-access-conditional-access/20-require-mfa-policy-review.png)
+- [`21-user-risk-condition-review.png`](../screenshots/13-secure-access-conditional-access/21-user-risk-condition-review.png)
+- [`22-require-mfa-policy-created.png`](../screenshots/13-secure-access-conditional-access/22-require-mfa-policy-created.png)
+
+</details>
