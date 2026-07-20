@@ -23,6 +23,7 @@ The full screenshot archive is preserved in the `screenshots/` directory and lis
 - Role assignments, Purview role groups, administrative units, scoped delegation, and eligible PIM assignments
 - Windows Server AD DS, IDFix, Microsoft Entra Connect Sync, Microsoft Entra Cloud Sync, and Connect Health
 - Self-service password reset, authentication methods, password-writeback settings, smart lockout, banned-password controls, and authentication reporting
+- Microsoft Entra Conditional Access, Security Defaults transition, user-risk and sign-in-risk conditions, MFA grant controls, emergency-access exclusions, target-resource scoping, and identity/sign-in reporting
 
 ## Documentation Standard
 
