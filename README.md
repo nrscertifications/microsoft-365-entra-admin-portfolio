@@ -23,6 +23,8 @@ The main page provides a fast view of the workstreams and skills. Each detailed 
 | Hybrid Identity | Configured Microsoft Entra Connect Sync and Cloud Sync in separate lab forests, verified synchronized identities, and investigated Connect Health telemetry. | [View workstream](docs/hybrid-identity-synchronization.md) |
 | Authentication & Password Security | Configured SSPR, authentication methods, password writeback, smart lockout, banned passwords, Windows Server AD password protection, and registration reporting. | [View workstream](docs/authentication-password-protection.md) |
 | Secure Access & Conditional Access | Disabled Security Defaults, created risk-based and scoped MFA policies, configured emergency-access exclusion, and reviewed risk and sign-in reporting. | [View workstream](docs/secure-access-conditional-access.md) |
+| Defender Security Posture, Reports & Alerts | Reviewed Secure Score recommendations, Defender XDR incident/reporting surfaces, Threat analytics, and configured a Threat analytics email-notification rule. | [View workstream](docs/defender-security-reports-alerts.md) |
+| Defender for Office 365 | Configured anti-phishing, anti-spam, Safe Attachments, Safe Links, and quarantine policies; reviewed allow/block controls and used Explorer remediation. | [View workstream](docs/defender-email-collaboration-protection.md) |
 
 ---
 
@@ -34,6 +36,8 @@ The main page provides a fast view of the workstreams and skills. Each detailed 
 - **Hybrid Identity:** IDFix remediation, Microsoft Entra Connect Sync, Microsoft Entra Cloud Sync, Password Hash Synchronization, OU and distinguished-name scoping, synchronized identity verification, and Connect Health troubleshooting.
 - **Authentication & Password Security:** Self-service password reset, security-question controls, SMS method targeting, password-writeback settings, password expiration, smart lockout, custom banned passwords, Windows Server AD password protection in Audit mode, and registration reporting.
 - **Secure Access & Conditional Access:** Security Defaults transition, user-risk and sign-in-risk conditions, MFA grant controls, emergency-access exclusions, target-resource scoping, client-app and device-platform conditions, policy state management, risky-user reporting, and sign-in log review.
+- **Microsoft Defender XDR:** Microsoft Secure Score, recommended actions, incident-queue review, unified security reporting, Threat analytics, and Threat analytics email-notification rules.
+- **Defender for Office 365:** Preset security policies, Configuration analyzer, anti-phishing, anti-spam, anti-malware, Safe Attachments, Safe Links, Tenant Allow/Block Lists, quarantine policies, Threat Explorer remediation, Threat Tracker, and restricted-entity review.
 - **Windows Server & Active Directory:** AD DS and DNS installation, forest promotion, OU and user preparation, directory attribute review, domain-controller validation, and synchronization scope preparation.
 - **Azure Portal:** Virtual machine deployment, resource configuration, tenant and directory administration, and Log Analytics workspace deployment and cleanup.
 - **Microsoft Graph PowerShell:** Module installation, delegated authentication, user retrieval and creation, group creation, subscribed SKU review, license assignment, CSV-based bulk provisioning, verification, and cleanup.
